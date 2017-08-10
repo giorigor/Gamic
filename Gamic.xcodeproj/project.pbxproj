@@ -13,6 +13,7 @@
 		74F1411B1F3CDBAB0092C069 /* Gamic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 74F141191F3CDBAB0092C069 /* Gamic.xcdatamodeld */; };
 		74F1411D1F3CDBAB0092C069 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74F1411C1F3CDBAB0092C069 /* Assets.xcassets */; };
 		74F141201F3CDBAB0092C069 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F1411E1F3CDBAB0092C069 /* LaunchScreen.storyboard */; };
+		74F1412A1F3CDC490092C069 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F141291F3CDC490092C069 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		74F1411C1F3CDBAB0092C069 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74F1411F1F3CDBAB0092C069 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74F141211F3CDBAB0092C069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74F141291F3CDC490092C069 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		74F141111F3CDBAA0092C069 /* Gamic */ = {
 			isa = PBXGroup;
 			children = (
-				74F141121F3CDBAB0092C069 /* AppDelegate.swift */,
-				74F141141F3CDBAB0092C069 /* ViewController.swift */,
-				74F141161F3CDBAB0092C069 /* Main.storyboard */,
-				74F1411C1F3CDBAB0092C069 /* Assets.xcassets */,
-				74F1411E1F3CDBAB0092C069 /* LaunchScreen.storyboard */,
-				74F141211F3CDBAB0092C069 /* Info.plist */,
-				74F141191F3CDBAB0092C069 /* Gamic.xcdatamodeld */,
+				74F1412B1F3CDCAD0092C069 /* Model */,
+				74F141281F3CDC190092C069 /* View */,
+				74F1412C1F3CDCC10092C069 /* Controller */,
+				74F141271F3CDBFA0092C069 /* Supporting Files */,
 			);
 			path = Gamic;
+			sourceTree = "<group>";
+		};
+		74F141271F3CDBFA0092C069 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				74F141121F3CDBAB0092C069 /* AppDelegate.swift */,
+				74F1411C1F3CDBAB0092C069 /* Assets.xcassets */,
+				74F141211F3CDBAB0092C069 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		74F141281F3CDC190092C069 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74F141161F3CDBAB0092C069 /* Main.storyboard */,
+				74F1411E1F3CDBAB0092C069 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		74F1412B1F3CDCAD0092C069 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74F141291F3CDC490092C069 /* CoreDataManager.swift */,
+				74F141191F3CDBAB0092C069 /* Gamic.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		74F1412C1F3CDCC10092C069 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				74F141141F3CDBAB0092C069 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +176,7 @@
 			files = (
 				74F141151F3CDBAB0092C069 /* ViewController.swift in Sources */,
 				74F141131F3CDBAB0092C069 /* AppDelegate.swift in Sources */,
+				74F1412A1F3CDC490092C069 /* CoreDataManager.swift in Sources */,
 				74F1411B1F3CDBAB0092C069 /* Gamic.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
