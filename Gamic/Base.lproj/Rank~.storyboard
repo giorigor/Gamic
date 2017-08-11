@@ -24,12 +24,41 @@
                         <segue destination="DGU-iE-YLJ" kind="relationship" relationship="viewControllers" id="qWl-lr-hPR"/>
                         <segue destination="u6m-bx-f2c" kind="relationship" relationship="viewControllers" id="Ctb-Tc-TAG"/>
                         <segue destination="yuB-X6-rXs" kind="relationship" relationship="viewControllers" id="CJ6-VL-zWa"/>
-                        <segue destination="wah-ki-uCD" kind="relationship" relationship="viewControllers" id="CVS-Hi-S5B"/>
+                        <segue destination="aLl-rl-tqt" kind="relationship" relationship="viewControllers" id="CVS-Hi-S5B"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q6a-CH-bg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-5092" y="1072"/>
+        </scene>
+        <!--Rank-->
+        <scene sceneID="8PL-xS-yy1">
+            <objects>
+                <tableViewController id="aLl-rl-tqt" userLabel="Rank" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="mDa-gD-Ch3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="42b-AH-fws">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="42b-AH-fws" id="Bq3-GG-OZT">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aLl-rl-tqt" id="wgo-lL-pjX"/>
+                            <outlet property="delegate" destination="aLl-rl-tqt" id="GjW-1C-d2z"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Rank" id="oua-qS-XsG"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tid-S3-6ah" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2674" y="2464"/>
         </scene>
         <!--Perfil-->
         <scene sceneID="AGx-bK-G5d">
@@ -106,16 +135,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jgT-j5-ZMF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2671" y="1796"/>
-        </scene>
-        <!--Rank-->
-        <scene sceneID="EOi-7f-VO3">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Rank" id="wah-ki-uCD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Awm-VQ-vLl"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="U8k-3L-e6C" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2674" y="2464"/>
         </scene>
     </scenes>
 </document>

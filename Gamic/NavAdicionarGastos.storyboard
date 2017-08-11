@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3ho-5g-hME">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--NavAdicionarGastos-->
+        <scene sceneID="7Vw-np-Z0z">
+            <objects>
+                <navigationController title="NavAdicionarGastos" id="3ho-5g-hME" userLabel="NavAdicionarGastos" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Gastos" id="QFw-Pc-2c1"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="E1M-2h-NCq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Oxq-Ok-Raf">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="gqb-57-BgA" kind="relationship" relationship="rootViewController" id="NF5-7l-ucL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cbq-CT-aQh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2671" y="356"/>
+        </scene>
+        <!--Gastos-->
+        <scene sceneID="1qM-Gy-CC4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Gastos" id="gqb-57-BgA" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="M8B-oF-TNU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uMF-uo-eo2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1889" y="356"/>
+        </scene>
+    </scenes>
+</document>
