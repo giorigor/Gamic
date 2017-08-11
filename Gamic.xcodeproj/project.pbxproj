@@ -16,6 +16,7 @@
 		3F9FAE171F3DF59400520ECD /* NavMissoes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE151F3DF59400520ECD /* NavMissoes.storyboard */; };
 		3F9FAE191F3DF5A300520ECD /* Conquistas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE181F3DF5A300520ECD /* Conquistas.storyboard */; };
 		3F9FAE1C1F3DF5B200520ECD /* Rank.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE1A1F3DF5B200520ECD /* Rank.storyboard */; };
+		3F9FAE231F3DFBD600520ECD /* DetalhesGastos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE221F3DFBD600520ECD /* DetalhesGastos.storyboard */; };
 		74F141131F3CDBAB0092C069 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F141121F3CDBAB0092C069 /* AppDelegate.swift */; };
 		74F141151F3CDBAB0092C069 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F141141F3CDBAB0092C069 /* ViewController.swift */; };
 		74F141181F3CDBAB0092C069 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F141161F3CDBAB0092C069 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		3F9FAE161F3DF59400520ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NavMissoes.storyboard; sourceTree = "<group>"; };
 		3F9FAE181F3DF5A300520ECD /* Conquistas.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Conquistas.storyboard; sourceTree = "<group>"; };
 		3F9FAE1B1F3DF5B200520ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Rank.storyboard; sourceTree = "<group>"; };
+		3F9FAE221F3DFBD600520ECD /* DetalhesGastos.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetalhesGastos.storyboard; sourceTree = "<group>"; };
 		74F1410F1F3CDBAA0092C069 /* Gamic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gamic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F141121F3CDBAB0092C069 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74F141141F3CDBAB0092C069 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				3F9FAE0E1F3DF56C00520ECD /* NavAdicionarGastos.storyboard */,
 				3F9FAE0B1F3DF54700520ECD /* AdicionarGastos.storyboard */,
 				3F9FAE091F3DF53600520ECD /* Gastos.storyboard */,
+				3F9FAE221F3DFBD600520ECD /* DetalhesGastos.storyboard */,
 			);
 			name = Gastos;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				3F9FAE0D1F3DF54700520ECD /* AdicionarGastos.storyboard in Resources */,
 				3F9FAE141F3DF58800520ECD /* AdicionarMissoes.storyboard in Resources */,
 				3F9FAE171F3DF59400520ECD /* NavMissoes.storyboard in Resources */,
+				3F9FAE231F3DFBD600520ECD /* DetalhesGastos.storyboard in Resources */,
 				74F141181F3CDBAB0092C069 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
