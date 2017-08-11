@@ -104,6 +104,53 @@
 			name = Perfil;
 			sourceTree = "<group>";
 		};
+		741907DD1F3E2BAE00E5BCF4 /* Data Access Object */ = {
+			isa = PBXGroup;
+			children = (
+				741907DE1F3E2BDD00E5BCF4 /* Perfil */,
+				741907DF1F3E2C1700E5BCF4 /* Missoes */,
+				741907E01F3E2C2700E5BCF4 /* Gastos */,
+				741907E11F3E2C2F00E5BCF4 /* Conquistas */,
+				741907E21F3E2C3D00E5BCF4 /* Rank */,
+			);
+			name = "Data Access Object";
+			sourceTree = "<group>";
+		};
+		741907DE1F3E2BDD00E5BCF4 /* Perfil */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Perfil;
+			sourceTree = "<group>";
+		};
+		741907DF1F3E2C1700E5BCF4 /* Missoes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Missoes;
+			sourceTree = "<group>";
+		};
+		741907E01F3E2C2700E5BCF4 /* Gastos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Gastos;
+			sourceTree = "<group>";
+		};
+		741907E11F3E2C2F00E5BCF4 /* Conquistas */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Conquistas;
+			sourceTree = "<group>";
+		};
+		741907E21F3E2C3D00E5BCF4 /* Rank */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Rank;
+			sourceTree = "<group>";
+		};
 		74F141061F3CDBAA0092C069 = {
 			isa = PBXGroup;
 			children = (
@@ -145,12 +192,12 @@
 			isa = PBXGroup;
 			children = (
 				74F141161F3CDBAB0092C069 /* Main.storyboard */,
-				3F9FAE1D1F3DF5E300520ECD /* Rank */,
-				3F9FAE1E1F3DF5E900520ECD /* Conquistas */,
+				74F1411E1F3CDBAB0092C069 /* LaunchScreen.storyboard */,
+				3F9FAE211F3DF60300520ECD /* Perfil */,
 				3F9FAE1F1F3DF5F100520ECD /* Missoes */,
 				3F9FAE201F3DF5F800520ECD /* Gastos */,
-				3F9FAE211F3DF60300520ECD /* Perfil */,
-				74F1411E1F3CDBAB0092C069 /* LaunchScreen.storyboard */,
+				3F9FAE1E1F3DF5E900520ECD /* Conquistas */,
+				3F9FAE1D1F3DF5E300520ECD /* Rank */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -158,6 +205,7 @@
 		74F1412B1F3CDCAD0092C069 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				741907DD1F3E2BAE00E5BCF4 /* Data Access Object */,
 				74F141291F3CDC490092C069 /* CoreDataManager.swift */,
 				74F141191F3CDBAB0092C069 /* Gamic.xcdatamodeld */,
 			);
