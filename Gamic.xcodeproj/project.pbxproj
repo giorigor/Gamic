@@ -17,6 +17,8 @@
 		3F9FAE191F3DF5A300520ECD /* Conquistas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE181F3DF5A300520ECD /* Conquistas.storyboard */; };
 		3F9FAE1C1F3DF5B200520ECD /* Rank.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE1A1F3DF5B200520ECD /* Rank.storyboard */; };
 		3F9FAE231F3DFBD600520ECD /* DetalhesGastos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE221F3DFBD600520ECD /* DetalhesGastos.storyboard */; };
+		741907E91F3E428E00E5BCF4 /* MissoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741907E81F3E428E00E5BCF4 /* MissoesTableViewController.swift */; };
+		741907EB1F3E42BD00E5BCF4 /* MissoesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741907EA1F3E42BD00E5BCF4 /* MissoesTableViewCell.swift */; };
 		74F141131F3CDBAB0092C069 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F141121F3CDBAB0092C069 /* AppDelegate.swift */; };
 		74F141151F3CDBAB0092C069 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F141141F3CDBAB0092C069 /* ViewController.swift */; };
 		74F141181F3CDBAB0092C069 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F141161F3CDBAB0092C069 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 		3F9FAE181F3DF5A300520ECD /* Conquistas.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Conquistas.storyboard; sourceTree = "<group>"; };
 		3F9FAE1B1F3DF5B200520ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Rank.storyboard; sourceTree = "<group>"; };
 		3F9FAE221F3DFBD600520ECD /* DetalhesGastos.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetalhesGastos.storyboard; sourceTree = "<group>"; };
+		741907E81F3E428E00E5BCF4 /* MissoesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissoesTableViewController.swift; sourceTree = "<group>"; };
+		741907EA1F3E42BD00E5BCF4 /* MissoesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissoesTableViewCell.swift; sourceTree = "<group>"; };
 		74F1410F1F3CDBAA0092C069 /* Gamic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gamic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F141121F3CDBAB0092C069 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74F141141F3CDBAB0092C069 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +155,43 @@
 			name = Rank;
 			sourceTree = "<group>";
 		};
+		741907E31F3E423500E5BCF4 /* Perfil */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Perfil;
+			sourceTree = "<group>";
+		};
+		741907E41F3E424B00E5BCF4 /* Missoes */ = {
+			isa = PBXGroup;
+			children = (
+				741907E81F3E428E00E5BCF4 /* MissoesTableViewController.swift */,
+				741907EA1F3E42BD00E5BCF4 /* MissoesTableViewCell.swift */,
+			);
+			name = Missoes;
+			sourceTree = "<group>";
+		};
+		741907E51F3E425700E5BCF4 /* Gastos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Gastos;
+			sourceTree = "<group>";
+		};
+		741907E61F3E426100E5BCF4 /* Conquistas */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Conquistas;
+			sourceTree = "<group>";
+		};
+		741907E71F3E426C00E5BCF4 /* Rank */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Rank;
+			sourceTree = "<group>";
+		};
 		74F141061F3CDBAA0092C069 = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +256,11 @@
 		74F1412C1F3CDCC10092C069 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				741907E31F3E423500E5BCF4 /* Perfil */,
+				741907E41F3E424B00E5BCF4 /* Missoes */,
+				741907E51F3E425700E5BCF4 /* Gastos */,
+				741907E61F3E426100E5BCF4 /* Conquistas */,
+				741907E71F3E426C00E5BCF4 /* Rank */,
 				74F141141F3CDBAB0092C069 /* ViewController.swift */,
 			);
 			name = Controller;
@@ -305,7 +351,9 @@
 				74F141151F3CDBAB0092C069 /* ViewController.swift in Sources */,
 				74F141131F3CDBAB0092C069 /* AppDelegate.swift in Sources */,
 				74F1412A1F3CDC490092C069 /* CoreDataManager.swift in Sources */,
+				741907EB1F3E42BD00E5BCF4 /* MissoesTableViewCell.swift in Sources */,
 				74F1411B1F3CDBAB0092C069 /* Gamic.xcdatamodeld in Sources */,
+				741907E91F3E428E00E5BCF4 /* MissoesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
