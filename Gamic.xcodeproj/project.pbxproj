@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F9FAE081F3DF52600520ECD /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE061F3DF52600520ECD /* Perfil.storyboard */; };
+		3F9FAE0A1F3DF53600520ECD /* Gastos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE091F3DF53600520ECD /* Gastos.storyboard */; };
+		3F9FAE0D1F3DF54700520ECD /* AdicionarGastos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE0B1F3DF54700520ECD /* AdicionarGastos.storyboard */; };
+		3F9FAE0F1F3DF56C00520ECD /* NavAdicionarGastos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE0E1F3DF56C00520ECD /* NavAdicionarGastos.storyboard */; };
+		3F9FAE121F3DF57900520ECD /* Missoes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE101F3DF57900520ECD /* Missoes.storyboard */; };
+		3F9FAE141F3DF58800520ECD /* AdicionarMissoes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE131F3DF58800520ECD /* AdicionarMissoes.storyboard */; };
+		3F9FAE171F3DF59400520ECD /* NavMissoes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE151F3DF59400520ECD /* NavMissoes.storyboard */; };
+		3F9FAE191F3DF5A300520ECD /* Conquistas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE181F3DF5A300520ECD /* Conquistas.storyboard */; };
+		3F9FAE1C1F3DF5B200520ECD /* Rank.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE1A1F3DF5B200520ECD /* Rank.storyboard */; };
 		74F141131F3CDBAB0092C069 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F141121F3CDBAB0092C069 /* AppDelegate.swift */; };
 		74F141151F3CDBAB0092C069 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F141141F3CDBAB0092C069 /* ViewController.swift */; };
 		74F141181F3CDBAB0092C069 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F141161F3CDBAB0092C069 /* Main.storyboard */; };
@@ -17,6 +26,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F9FAE071F3DF52600520ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Perfil.storyboard; sourceTree = "<group>"; };
+		3F9FAE091F3DF53600520ECD /* Gastos.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Gastos.storyboard; sourceTree = "<group>"; };
+		3F9FAE0C1F3DF54700520ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AdicionarGastos.storyboard; sourceTree = "<group>"; };
+		3F9FAE0E1F3DF56C00520ECD /* NavAdicionarGastos.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NavAdicionarGastos.storyboard; sourceTree = "<group>"; };
+		3F9FAE111F3DF57900520ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Missoes.storyboard; sourceTree = "<group>"; };
+		3F9FAE131F3DF58800520ECD /* AdicionarMissoes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AdicionarMissoes.storyboard; sourceTree = "<group>"; };
+		3F9FAE161F3DF59400520ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NavMissoes.storyboard; sourceTree = "<group>"; };
+		3F9FAE181F3DF5A300520ECD /* Conquistas.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Conquistas.storyboard; sourceTree = "<group>"; };
+		3F9FAE1B1F3DF5B200520ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Rank.storyboard; sourceTree = "<group>"; };
 		74F1410F1F3CDBAA0092C069 /* Gamic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gamic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F141121F3CDBAB0092C069 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74F141141F3CDBAB0092C069 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +57,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F9FAE1D1F3DF5E300520ECD /* Rank */ = {
+			isa = PBXGroup;
+			children = (
+				3F9FAE1A1F3DF5B200520ECD /* Rank.storyboard */,
+			);
+			name = Rank;
+			sourceTree = "<group>";
+		};
+		3F9FAE1E1F3DF5E900520ECD /* Conquistas */ = {
+			isa = PBXGroup;
+			children = (
+				3F9FAE181F3DF5A300520ECD /* Conquistas.storyboard */,
+			);
+			name = Conquistas;
+			sourceTree = "<group>";
+		};
+		3F9FAE1F1F3DF5F100520ECD /* Missoes */ = {
+			isa = PBXGroup;
+			children = (
+				3F9FAE151F3DF59400520ECD /* NavMissoes.storyboard */,
+				3F9FAE131F3DF58800520ECD /* AdicionarMissoes.storyboard */,
+				3F9FAE101F3DF57900520ECD /* Missoes.storyboard */,
+			);
+			name = Missoes;
+			sourceTree = "<group>";
+		};
+		3F9FAE201F3DF5F800520ECD /* Gastos */ = {
+			isa = PBXGroup;
+			children = (
+				3F9FAE0E1F3DF56C00520ECD /* NavAdicionarGastos.storyboard */,
+				3F9FAE0B1F3DF54700520ECD /* AdicionarGastos.storyboard */,
+				3F9FAE091F3DF53600520ECD /* Gastos.storyboard */,
+			);
+			name = Gastos;
+			sourceTree = "<group>";
+		};
+		3F9FAE211F3DF60300520ECD /* Perfil */ = {
+			isa = PBXGroup;
+			children = (
+				3F9FAE061F3DF52600520ECD /* Perfil.storyboard */,
+			);
+			name = Perfil;
+			sourceTree = "<group>";
+		};
 		74F141061F3CDBAA0092C069 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +142,11 @@
 			isa = PBXGroup;
 			children = (
 				74F141161F3CDBAB0092C069 /* Main.storyboard */,
+				3F9FAE1D1F3DF5E300520ECD /* Rank */,
+				3F9FAE1E1F3DF5E900520ECD /* Conquistas */,
+				3F9FAE1F1F3DF5F100520ECD /* Missoes */,
+				3F9FAE201F3DF5F800520ECD /* Gastos */,
+				3F9FAE211F3DF60300520ECD /* Perfil */,
 				74F1411E1F3CDBAB0092C069 /* LaunchScreen.storyboard */,
 			);
 			name = View;
@@ -163,6 +230,15 @@
 			files = (
 				74F141201F3CDBAB0092C069 /* LaunchScreen.storyboard in Resources */,
 				74F1411D1F3CDBAB0092C069 /* Assets.xcassets in Resources */,
+				3F9FAE191F3DF5A300520ECD /* Conquistas.storyboard in Resources */,
+				3F9FAE081F3DF52600520ECD /* Perfil.storyboard in Resources */,
+				3F9FAE0F1F3DF56C00520ECD /* NavAdicionarGastos.storyboard in Resources */,
+				3F9FAE121F3DF57900520ECD /* Missoes.storyboard in Resources */,
+				3F9FAE1C1F3DF5B200520ECD /* Rank.storyboard in Resources */,
+				3F9FAE0A1F3DF53600520ECD /* Gastos.storyboard in Resources */,
+				3F9FAE0D1F3DF54700520ECD /* AdicionarGastos.storyboard in Resources */,
+				3F9FAE141F3DF58800520ECD /* AdicionarMissoes.storyboard in Resources */,
+				3F9FAE171F3DF59400520ECD /* NavMissoes.storyboard in Resources */,
 				74F141181F3CDBAB0092C069 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,6 +260,46 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		3F9FAE061F3DF52600520ECD /* Perfil.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F9FAE071F3DF52600520ECD /* Base */,
+			);
+			name = Perfil.storyboard;
+			sourceTree = "<group>";
+		};
+		3F9FAE0B1F3DF54700520ECD /* AdicionarGastos.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F9FAE0C1F3DF54700520ECD /* Base */,
+			);
+			name = AdicionarGastos.storyboard;
+			sourceTree = "<group>";
+		};
+		3F9FAE101F3DF57900520ECD /* Missoes.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F9FAE111F3DF57900520ECD /* Base */,
+			);
+			name = Missoes.storyboard;
+			sourceTree = "<group>";
+		};
+		3F9FAE151F3DF59400520ECD /* NavMissoes.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F9FAE161F3DF59400520ECD /* Base */,
+			);
+			name = NavMissoes.storyboard;
+			sourceTree = "<group>";
+		};
+		3F9FAE1A1F3DF5B200520ECD /* Rank.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F9FAE1B1F3DF5B200520ECD /* Base */,
+			);
+			name = Rank.storyboard;
+			sourceTree = "<group>";
+		};
 		74F141161F3CDBAB0092C069 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -341,6 +457,7 @@
 				74F141261F3CDBAB0092C069 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
