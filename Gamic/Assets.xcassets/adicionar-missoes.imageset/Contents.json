@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "adicionar-missoes.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "bulleted-list-filled.png",
       "scale" : "2x"
     },
     {

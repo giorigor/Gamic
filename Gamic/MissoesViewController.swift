@@ -14,6 +14,7 @@ class MissoesViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBOutlet weak var saldoLabel: UILabel!
 
     var missoes = [Missao]()
+    var celulaEstaSelecionada: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,15 +46,16 @@ class MissoesViewController: UIViewController, UITableViewDataSource, UITableVie
         return cell
     }
 
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            missoes.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert {
+            // Nothing yet
+        }
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
+    }
 }

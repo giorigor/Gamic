@@ -18,6 +18,8 @@
 		3F9FAE1C1F3DF5B200520ECD /* Rank.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE1A1F3DF5B200520ECD /* Rank.storyboard */; };
 		3F9FAE231F3DFBD600520ECD /* DetalhesGastos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE221F3DFBD600520ECD /* DetalhesGastos.storyboard */; };
 		741907EB1F3E42BD00E5BCF4 /* MissoesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741907EA1F3E42BD00E5BCF4 /* MissoesTableViewCell.swift */; };
+		7471FC971F422180003671FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7471FC961F422180003671FE /* Assets.xcassets */; };
+		7471FC991F422CFB003671FE /* AdicionarMissoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7471FC981F422CFB003671FE /* AdicionarMissoesViewController.swift */; };
 		74B1FBDC1F41E25C004342CF /* MissoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1FBDB1F41E25C004342CF /* MissoesViewController.swift */; };
 		74B1FBDE1F41F5DF004342CF /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1FBDD1F41F5DF004342CF /* Perfil.swift */; };
 		74E56D1C1F41D36B006D516C /* Missao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E56D1B1F41D36B006D516C /* Missao.swift */; };
@@ -25,7 +27,6 @@
 		74F141151F3CDBAB0092C069 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F141141F3CDBAB0092C069 /* ViewController.swift */; };
 		74F141181F3CDBAB0092C069 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F141161F3CDBAB0092C069 /* Main.storyboard */; };
 		74F1411B1F3CDBAB0092C069 /* Gamic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 74F141191F3CDBAB0092C069 /* Gamic.xcdatamodeld */; };
-		74F1411D1F3CDBAB0092C069 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74F1411C1F3CDBAB0092C069 /* Assets.xcassets */; };
 		74F141201F3CDBAB0092C069 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F1411E1F3CDBAB0092C069 /* LaunchScreen.storyboard */; };
 		74F1412A1F3CDC490092C069 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F141291F3CDC490092C069 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,8 @@
 		3F9FAE1B1F3DF5B200520ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Rank.storyboard; sourceTree = "<group>"; };
 		3F9FAE221F3DFBD600520ECD /* DetalhesGastos.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetalhesGastos.storyboard; sourceTree = "<group>"; };
 		741907EA1F3E42BD00E5BCF4 /* MissoesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissoesTableViewCell.swift; sourceTree = "<group>"; };
+		7471FC961F422180003671FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7471FC981F422CFB003671FE /* AdicionarMissoesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdicionarMissoesViewController.swift; sourceTree = "<group>"; };
 		74B1FBDB1F41E25C004342CF /* MissoesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissoesViewController.swift; sourceTree = "<group>"; };
 		74B1FBDD1F41F5DF004342CF /* Perfil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Perfil.swift; sourceTree = "<group>"; };
 		74E56D1B1F41D36B006D516C /* Missao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Missao.swift; sourceTree = "<group>"; };
@@ -50,7 +53,6 @@
 		74F141141F3CDBAB0092C069 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		74F141171F3CDBAB0092C069 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74F1411A1F3CDBAB0092C069 /* Gamic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gamic.xcdatamodel; sourceTree = "<group>"; };
-		74F1411C1F3CDBAB0092C069 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74F1411F1F3CDBAB0092C069 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74F141211F3CDBAB0092C069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74F141291F3CDC490092C069 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 			children = (
 				741907EA1F3E42BD00E5BCF4 /* MissoesTableViewCell.swift */,
 				74B1FBDB1F41E25C004342CF /* MissoesViewController.swift */,
+				7471FC981F422CFB003671FE /* AdicionarMissoesViewController.swift */,
 			);
 			name = Missoes;
 			sourceTree = "<group>";
@@ -230,8 +233,8 @@
 			children = (
 				74F1411E1F3CDBAB0092C069 /* LaunchScreen.storyboard */,
 				74F141121F3CDBAB0092C069 /* AppDelegate.swift */,
-				74F1411C1F3CDBAB0092C069 /* Assets.xcassets */,
 				74F141211F3CDBAB0092C069 /* Info.plist */,
+				7471FC961F422180003671FE /* Assets.xcassets */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -332,12 +335,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				74F141201F3CDBAB0092C069 /* LaunchScreen.storyboard in Resources */,
-				74F1411D1F3CDBAB0092C069 /* Assets.xcassets in Resources */,
 				3F9FAE191F3DF5A300520ECD /* Conquistas.storyboard in Resources */,
 				3F9FAE081F3DF52600520ECD /* Perfil.storyboard in Resources */,
 				3F9FAE0F1F3DF56C00520ECD /* NavAdicionarGastos.storyboard in Resources */,
 				3F9FAE121F3DF57900520ECD /* Missoes.storyboard in Resources */,
 				3F9FAE1C1F3DF5B200520ECD /* Rank.storyboard in Resources */,
+				7471FC971F422180003671FE /* Assets.xcassets in Resources */,
 				3F9FAE0A1F3DF53600520ECD /* Gastos.storyboard in Resources */,
 				3F9FAE0D1F3DF54700520ECD /* AdicionarGastos.storyboard in Resources */,
 				3F9FAE141F3DF58800520ECD /* AdicionarMissoes.storyboard in Resources */,
@@ -355,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74B1FBDC1F41E25C004342CF /* MissoesViewController.swift in Sources */,
+				7471FC991F422CFB003671FE /* AdicionarMissoesViewController.swift in Sources */,
 				74B1FBDE1F41F5DF004342CF /* Perfil.swift in Sources */,
 				74F141151F3CDBAB0092C069 /* ViewController.swift in Sources */,
 				74E56D1C1F41D36B006D516C /* Missao.swift in Sources */,
