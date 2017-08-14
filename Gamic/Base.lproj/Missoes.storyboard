@@ -22,11 +22,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="rjr-zY-pzE" userLabel="Content Stack View">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="rjr-zY-pzE" userLabel="Content Stack View">
                                 <rect key="frame" x="16" y="79" width="343" height="539"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="v5F-iL-Sec" userLabel="Upper Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="150"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="169.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04e-8O-Bi2">
                                                 <rect key="frame" x="101.5" y="0.0" width="140" height="140"/>
@@ -36,11 +36,11 @@
                                                 </constraints>
                                                 <state key="normal" title="Adicionar Missão" image="plus"/>
                                                 <connections>
-                                                    <segue destination="Z1b-ec-aQm" kind="show" id="aXc-g9-gDv"/>
+                                                    <segue destination="Z1b-ec-aQm" kind="show" identifier="adicionarMissao" id="aXc-g9-gDv"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGL-6g-55F" userLabel="Saldo">
-                                                <rect key="frame" x="152" y="150" width="39.5" height="0.0"/>
+                                                <rect key="frame" x="152" y="150" width="39.5" height="19.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -48,7 +48,7 @@
                                         </subviews>
                                     </stackView>
                                     <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="42" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vd1-6j-GSz">
-                                        <rect key="frame" x="0.0" y="175" width="343" height="364"/>
+                                        <rect key="frame" x="0.0" y="194.5" width="343" height="344.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" selectionStyle="default" indentationWidth="10" reuseIdentifier="missaoIdentifier" rowHeight="42" id="moG-xc-IvS" customClass="MissoesTableViewCell" customModule="Gamic" customModuleProvider="target">

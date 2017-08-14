@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol AddMissoesControllerDelegate {
+    func addMissoesControlerResponse()
+}
+
 class AdicionarMissoesViewController: UIViewController {
 
     
@@ -15,21 +19,26 @@ class AdicionarMissoesViewController: UIViewController {
     @IBOutlet weak var valorDaMissao: UITextField!
     @IBOutlet weak var quantidadeDeDias: UITextField!
     @IBOutlet weak var btnConfirmar: UIButton!
+    var listaDeMissoes = [Missao]()
+    var delegate: AddMissoesControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        btnConfirmar.addTarget(self, action: #selector(adicionarMissao), for: .touchUpInside)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func adicionarMissao(sender: UIButton!) {
+        let nmMissao = nomeDaMissao.text!
+        let vlrMissao = Double(valorDaMissao.text!)
+        let qtdDias = Int(quantidadeDeDias.text!)
+        let missao = Missao(nmMissao: nmMissao, vlrMissao: vlrMissao!, qtdPorDia: 50, qtdDeDias: qtdDias!)
+        listaDeMissoes.append(missao)
+        retornarParaMissoes()
     }
-    */
-
+    
+    func retornarParaMissoes() {
+        let missoesViewController = self.navigationController?.viewControllers.first as! MissoesViewController
+        missoesViewController.missoes = listaDeMissoes
+        _ = navigationController?.popViewController(animated: true)
+    }
 }

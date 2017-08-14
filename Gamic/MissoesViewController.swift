@@ -8,26 +8,27 @@
 
 import UIKit
 
-class MissoesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
+class MissoesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var saldoLabel: UILabel!
 
+    var missaoDAO = MissaoDAO()
     var missoes = [Missao]()
-    var celulaEstaSelecionada: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        missoes = MissaoDAO.getMissoes()
+        missoes = missaoDAO.getListaDeMissoes()
         saldoLabel.text = "Saldo: R$\(PerfilDAO.getPerfil().vlrSaldo)"
         tableView.delegate = self
         tableView.dataSource = self
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        tableView.reloadData()
+    }
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -55,7 +56,9 @@ class MissoesViewController: UIViewController, UITableViewDataSource, UITableVie
         }
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let adicionarMissoesViewController = segue.destination as! AdicionarMissoesViewController
+        adicionarMissoesViewController.listaDeMissoes = self.missoes
     }
-}
+    
+    }
