@@ -118,7 +118,7 @@
                             <constraint firstItem="ZSJ-n1-VQl" firstAttribute="centerX" secondItem="2Im-Av-a2u" secondAttribute="centerX" id="cfH-XB-8aB"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Gastos" image="coins2" id="jJA-Ua-aJv"/>
+                    <tabBarItem key="tabBarItem" title="Gastos" id="jJA-Ua-aJv"/>
                     <navigationItem key="navigationItem" title="Gastos" id="yp1-kR-y0M">
                         <barButtonItem key="backBarButtonItem" title="Gastos" id="Qje-Ej-rqr"/>
                     </navigationItem>
@@ -147,7 +147,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="coins2" width="25" height="25"/>
         <image name="plus" width="256" height="256"/>
     </resources>
 </document>

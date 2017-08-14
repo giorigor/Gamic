@@ -17,8 +17,10 @@
 		3F9FAE191F3DF5A300520ECD /* Conquistas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE181F3DF5A300520ECD /* Conquistas.storyboard */; };
 		3F9FAE1C1F3DF5B200520ECD /* Rank.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE1A1F3DF5B200520ECD /* Rank.storyboard */; };
 		3F9FAE231F3DFBD600520ECD /* DetalhesGastos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE221F3DFBD600520ECD /* DetalhesGastos.storyboard */; };
-		741907E91F3E428E00E5BCF4 /* MissoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741907E81F3E428E00E5BCF4 /* MissoesTableViewController.swift */; };
 		741907EB1F3E42BD00E5BCF4 /* MissoesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741907EA1F3E42BD00E5BCF4 /* MissoesTableViewCell.swift */; };
+		74B1FBDC1F41E25C004342CF /* MissoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1FBDB1F41E25C004342CF /* MissoesViewController.swift */; };
+		74B1FBDE1F41F5DF004342CF /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1FBDD1F41F5DF004342CF /* Perfil.swift */; };
+		74E56D1C1F41D36B006D516C /* Missao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E56D1B1F41D36B006D516C /* Missao.swift */; };
 		74F141131F3CDBAB0092C069 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F141121F3CDBAB0092C069 /* AppDelegate.swift */; };
 		74F141151F3CDBAB0092C069 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F141141F3CDBAB0092C069 /* ViewController.swift */; };
 		74F141181F3CDBAB0092C069 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F141161F3CDBAB0092C069 /* Main.storyboard */; };
@@ -39,8 +41,10 @@
 		3F9FAE181F3DF5A300520ECD /* Conquistas.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Conquistas.storyboard; sourceTree = "<group>"; };
 		3F9FAE1B1F3DF5B200520ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Rank.storyboard; sourceTree = "<group>"; };
 		3F9FAE221F3DFBD600520ECD /* DetalhesGastos.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetalhesGastos.storyboard; sourceTree = "<group>"; };
-		741907E81F3E428E00E5BCF4 /* MissoesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissoesTableViewController.swift; sourceTree = "<group>"; };
 		741907EA1F3E42BD00E5BCF4 /* MissoesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissoesTableViewCell.swift; sourceTree = "<group>"; };
+		74B1FBDB1F41E25C004342CF /* MissoesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissoesViewController.swift; sourceTree = "<group>"; };
+		74B1FBDD1F41F5DF004342CF /* Perfil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Perfil.swift; sourceTree = "<group>"; };
+		74E56D1B1F41D36B006D516C /* Missao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Missao.swift; sourceTree = "<group>"; };
 		74F1410F1F3CDBAA0092C069 /* Gamic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gamic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F141121F3CDBAB0092C069 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74F141141F3CDBAB0092C069 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 		741907DE1F3E2BDD00E5BCF4 /* Perfil */ = {
 			isa = PBXGroup;
 			children = (
+				74B1FBDD1F41F5DF004342CF /* Perfil.swift */,
 			);
 			name = Perfil;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 		741907DF1F3E2C1700E5BCF4 /* Missoes */ = {
 			isa = PBXGroup;
 			children = (
+				74E56D1B1F41D36B006D516C /* Missao.swift */,
 			);
 			name = Missoes;
 			sourceTree = "<group>";
@@ -165,8 +171,8 @@
 		741907E41F3E424B00E5BCF4 /* Missoes */ = {
 			isa = PBXGroup;
 			children = (
-				741907E81F3E428E00E5BCF4 /* MissoesTableViewController.swift */,
 				741907EA1F3E42BD00E5BCF4 /* MissoesTableViewCell.swift */,
+				74B1FBDB1F41E25C004342CF /* MissoesViewController.swift */,
 			);
 			name = Missoes;
 			sourceTree = "<group>";
@@ -222,6 +228,7 @@
 		74F141271F3CDBFA0092C069 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				74F1411E1F3CDBAB0092C069 /* LaunchScreen.storyboard */,
 				74F141121F3CDBAB0092C069 /* AppDelegate.swift */,
 				74F1411C1F3CDBAB0092C069 /* Assets.xcassets */,
 				74F141211F3CDBAB0092C069 /* Info.plist */,
@@ -233,7 +240,6 @@
 			isa = PBXGroup;
 			children = (
 				74F141161F3CDBAB0092C069 /* Main.storyboard */,
-				74F1411E1F3CDBAB0092C069 /* LaunchScreen.storyboard */,
 				3F9FAE211F3DF60300520ECD /* Perfil */,
 				3F9FAE1F1F3DF5F100520ECD /* Missoes */,
 				3F9FAE201F3DF5F800520ECD /* Gastos */,
@@ -348,12 +354,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B1FBDC1F41E25C004342CF /* MissoesViewController.swift in Sources */,
+				74B1FBDE1F41F5DF004342CF /* Perfil.swift in Sources */,
 				74F141151F3CDBAB0092C069 /* ViewController.swift in Sources */,
+				74E56D1C1F41D36B006D516C /* Missao.swift in Sources */,
 				74F141131F3CDBAB0092C069 /* AppDelegate.swift in Sources */,
 				74F1412A1F3CDC490092C069 /* CoreDataManager.swift in Sources */,
 				741907EB1F3E42BD00E5BCF4 /* MissoesTableViewCell.swift in Sources */,
 				74F1411B1F3CDBAB0092C069 /* Gamic.xcdatamodeld in Sources */,
-				741907E91F3E428E00E5BCF4 /* MissoesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

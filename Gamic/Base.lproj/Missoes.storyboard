@@ -13,7 +13,7 @@
         <!--Missoes-->
         <scene sceneID="BEX-Jd-iLw">
             <objects>
-                <viewController storyboardIdentifier="Missoes" id="ERx-JO-i5I" userLabel="Missoes" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Missoes" id="ERx-JO-i5I" userLabel="Missoes" customClass="MissoesViewController" customModule="Gamic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iEM-Cj-OLH"/>
                         <viewControllerLayoutGuide type="bottom" id="ffH-rg-eec"/>
@@ -22,17 +22,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YWT-GI-6Cl" userLabel="Content Stack View">
-                                <rect key="frame" x="20" y="84" width="374" height="584"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="rjr-zY-pzE" userLabel="Content Stack View">
+                                <rect key="frame" x="20" y="79" width="374" height="608"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="v5F-iL-Sec" userLabel="Upper Stack View">
-                                        <rect key="frame" x="112" y="0.0" width="150" height="187.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="170"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04e-8O-Bi2">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                <rect key="frame" x="117" y="0.0" width="140" height="140"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="2Y4-Ve-S0d"/>
-                                                    <constraint firstAttribute="height" constant="150" id="CXR-pX-8cH"/>
+                                                    <constraint firstAttribute="width" constant="140" id="2Y4-Ve-S0d"/>
+                                                    <constraint firstAttribute="height" constant="140" id="CXR-pX-8cH"/>
                                                 </constraints>
                                                 <state key="normal" title="Adicionar Missão" image="plus"/>
                                                 <connections>
@@ -40,54 +40,61 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGL-6g-55F" userLabel="Saldo">
-                                                <rect key="frame" x="47" y="160" width="56" height="27.666666666666686"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <rect key="frame" x="167" y="150" width="40" height="20"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="04e-8O-Bi2" firstAttribute="centerX" secondItem="v5F-iL-Sec" secondAttribute="centerX" id="JSh-QW-7q5"/>
-                                            <constraint firstItem="04e-8O-Bi2" firstAttribute="centerX" secondItem="v5F-iL-Sec" secondAttribute="centerX" id="w6I-0p-Pzl"/>
-                                        </constraints>
                                     </stackView>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="74" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vd1-6j-GSz">
-                                        <rect key="frame" x="0.0" y="187.66666666666671" width="374" height="396.33333333333326"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="42" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vd1-6j-GSz">
+                                        <rect key="frame" x="0.0" y="195" width="374" height="413"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="missaoIdentifier" rowHeight="74" id="moG-xc-IvS" customClass="MissoesTableViewCell" customModule="Gamic" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="374" height="74"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" selectionStyle="default" indentationWidth="10" reuseIdentifier="missaoIdentifier" rowHeight="42" id="moG-xc-IvS" customClass="MissoesTableViewCell" customModule="Gamic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="374" height="42"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="moG-xc-IvS" id="U67-kf-jGn">
-                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="74"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="41"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dRD-Tx-Ay6" userLabel="Missao Stack View">
-                                                            <rect key="frame" x="0.0" y="5" width="374" height="66.666666666666671"/>
+                                                        <stackView opaque="NO" contentMode="scaleAspectFit" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="x9m-OV-aEO" userLabel="Labels Stack View">
+                                                            <rect key="frame" x="8" y="8" width="358" height="25"/>
                                                             <subviews>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gCg-1H-5eW" userLabel="Missao Label">
-                                                                    <rect key="frame" x="0.0" y="8.3333333333333357" width="187" height="50"/>
+                                                                <stackView opaque="NO" contentMode="scaleAspectFit" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gCg-1H-5eW" userLabel="Missao Label">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="215" height="25"/>
                                                                     <subviews>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bulleted-list-filled" translatesAutoresizingMaskIntoConstraints="NO" id="Q7f-Le-oTh">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="88.666666666666671" height="50"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="25" id="Awz-pH-3ju"/>
+                                                                                <constraint firstAttribute="height" constant="25" id="fC9-UT-gZE"/>
+                                                                            </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyU-bU-9Z5" userLabel="Missao">
-                                                                            <rect key="frame" x="98.666666666666686" y="0.0" width="88.333333333333314" height="50"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                                            <rect key="frame" x="30" y="0.0" width="185" height="25"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="185" id="qIu-GV-Y7V"/>
+                                                                            </constraints>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
                                                                 </stackView>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QMl-D3-ImE" userLabel="Preco Label">
-                                                                    <rect key="frame" x="187" y="8.3333333333333357" width="187" height="50"/>
+                                                                <stackView opaque="NO" contentMode="scaleAspectFit" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QMl-D3-ImE" userLabel="Preco Label">
+                                                                    <rect key="frame" x="225" y="0.0" width="133" height="25"/>
                                                                     <subviews>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coins" translatesAutoresizingMaskIntoConstraints="NO" id="3Yo-1P-kwn">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="88.666666666666686" height="50"/>
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coins" translatesAutoresizingMaskIntoConstraints="NO" id="3Yo-1P-kwn">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="25" id="Ei8-zS-Yu0"/>
+                                                                                <constraint firstAttribute="height" constant="25" id="Xpx-uQ-6sI"/>
+                                                                            </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZW-2j-aUP" userLabel="Preco">
-                                                                            <rect key="frame" x="98.666666666666686" y="0.0" width="88.333333333333314" height="50"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                                            <rect key="frame" x="30" y="0.0" width="103" height="25"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
@@ -97,24 +104,37 @@
                                                         </stackView>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstItem="dRD-Tx-Ay6" firstAttribute="leading" secondItem="U67-kf-jGn" secondAttribute="leading" id="05u-i7-3WR"/>
-                                                        <constraint firstItem="dRD-Tx-Ay6" firstAttribute="top" secondItem="U67-kf-jGn" secondAttribute="top" constant="5" id="EfC-Pj-4q7"/>
-                                                        <constraint firstAttribute="trailing" secondItem="dRD-Tx-Ay6" secondAttribute="trailing" id="O46-pI-17D"/>
-                                                        <constraint firstAttribute="bottom" secondItem="dRD-Tx-Ay6" secondAttribute="bottom" constant="2" id="kt5-7F-VfC"/>
+                                                        <constraint firstItem="x9m-OV-aEO" firstAttribute="leading" secondItem="U67-kf-jGn" secondAttribute="leadingMargin" id="576-p0-wOn"/>
+                                                        <constraint firstItem="x9m-OV-aEO" firstAttribute="top" secondItem="U67-kf-jGn" secondAttribute="topMargin" id="IFS-Y7-fik"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="x9m-OV-aEO" secondAttribute="trailing" id="T07-XI-X54"/>
+                                                        <constraint firstItem="x9m-OV-aEO" firstAttribute="bottom" secondItem="U67-kf-jGn" secondAttribute="bottomMargin" id="hqo-iZ-TSY"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="nomeDaMissao" destination="cyU-bU-9Z5" id="KWo-WD-oqO"/>
+                                                    <outlet property="valorDaMissao" destination="sZW-2j-aUP" id="JN3-2X-wPP"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
+                                        <sections/>
                                     </tableView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Vd1-6j-GSz" secondAttribute="trailing" id="9o0-BY-SaD"/>
+                                    <constraint firstItem="v5F-iL-Sec" firstAttribute="top" secondItem="rjr-zY-pzE" secondAttribute="top" id="Jyk-Ad-7iG"/>
+                                    <constraint firstAttribute="trailing" secondItem="v5F-iL-Sec" secondAttribute="trailing" id="NhZ-GM-2qu"/>
+                                    <constraint firstItem="Vd1-6j-GSz" firstAttribute="leading" secondItem="rjr-zY-pzE" secondAttribute="leading" id="Pzs-8s-SOR"/>
+                                    <constraint firstAttribute="bottom" secondItem="Vd1-6j-GSz" secondAttribute="bottom" id="aqM-7g-ckI"/>
+                                    <constraint firstItem="v5F-iL-Sec" firstAttribute="leading" secondItem="rjr-zY-pzE" secondAttribute="leading" id="ka3-F8-vgn"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="YWT-GI-6Cl" firstAttribute="leading" secondItem="STy-lf-Scg" secondAttribute="leadingMargin" id="8pj-Gg-KW1"/>
-                            <constraint firstItem="YWT-GI-6Cl" firstAttribute="top" secondItem="iEM-Cj-OLH" secondAttribute="bottom" constant="20" id="bd2-WP-Gmo"/>
-                            <constraint firstItem="YWT-GI-6Cl" firstAttribute="trailing" secondItem="STy-lf-Scg" secondAttribute="trailingMargin" id="mFl-Mt-36m"/>
-                            <constraint firstItem="ffH-rg-eec" firstAttribute="top" secondItem="YWT-GI-6Cl" secondAttribute="bottom" constant="19" id="uJh-2N-Amo"/>
+                            <constraint firstItem="rjr-zY-pzE" firstAttribute="leading" secondItem="STy-lf-Scg" secondAttribute="leadingMargin" id="BDQ-nu-Sfq"/>
+                            <constraint firstItem="rjr-zY-pzE" firstAttribute="top" secondItem="iEM-Cj-OLH" secondAttribute="bottom" constant="15" id="Ftx-y2-dwS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rjr-zY-pzE" secondAttribute="trailing" id="Wey-jt-saT"/>
+                            <constraint firstItem="ffH-rg-eec" firstAttribute="top" secondItem="rjr-zY-pzE" secondAttribute="bottom" id="eLA-ly-M4a"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" tag="1" title="Missões" image="missoes" id="WGz-R7-nj7"/>
@@ -123,10 +143,14 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="saldoLabel" destination="sGL-6g-55F" id="707-ZO-Hb1"/>
+                        <outlet property="tableView" destination="Vd1-6j-GSz" id="qn6-fp-VwE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y4e-F7-fCI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1890.4000000000001" y="1071.8140929535234"/>
+            <point key="canvasLocation" x="-1891.304347826087" y="1071.1956521739132"/>
         </scene>
         <!--UIViewController-KJN-H1-CbR-->
         <scene sceneID="qWG-PF-rwT">
@@ -138,8 +162,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bulleted-list-filled" width="50" height="50"/>
-        <image name="coins" width="50" height="50"/>
+        <image name="bulleted-list-filled" width="25" height="25"/>
+        <image name="coins" width="25" height="25"/>
         <image name="missoes" width="25" height="25"/>
         <image name="plus" width="256" height="256"/>
     </resources>
