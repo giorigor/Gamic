@@ -58,13 +58,13 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="343" height="42"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleAspectFit" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="x9m-OV-aEO" userLabel="Labels Stack View">
+                                                        <stackView opaque="NO" contentMode="top" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="x9m-OV-aEO" userLabel="Labels Stack View">
                                                             <rect key="frame" x="8" y="8" width="327" height="25"/>
                                                             <subviews>
-                                                                <stackView opaque="NO" contentMode="scaleAspectFit" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gCg-1H-5eW" userLabel="Missao Label">
+                                                                <stackView opaque="NO" contentMode="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gCg-1H-5eW" userLabel="Missao Label">
                                                                     <rect key="frame" x="0.0" y="0.0" width="215" height="25"/>
                                                                     <subviews>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list" translatesAutoresizingMaskIntoConstraints="NO" id="Q7f-Le-oTh">
+                                                                        <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list" translatesAutoresizingMaskIntoConstraints="NO" id="Q7f-Le-oTh">
                                                                             <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="25" id="Awz-pH-3ju"/>
@@ -82,10 +82,10 @@
                                                                         </label>
                                                                     </subviews>
                                                                 </stackView>
-                                                                <stackView opaque="NO" contentMode="scaleAspectFit" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QMl-D3-ImE" userLabel="Preco Label">
+                                                                <stackView opaque="NO" contentMode="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QMl-D3-ImE" userLabel="Preco Label">
                                                                     <rect key="frame" x="225" y="0.0" width="102" height="25"/>
                                                                     <subviews>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coin-stack" translatesAutoresizingMaskIntoConstraints="NO" id="3Yo-1P-kwn">
+                                                                        <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coin-stack" translatesAutoresizingMaskIntoConstraints="NO" id="3Yo-1P-kwn">
                                                                             <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="25" id="Ei8-zS-Yu0"/>

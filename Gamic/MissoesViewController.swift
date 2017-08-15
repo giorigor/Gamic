@@ -9,12 +9,14 @@
 import UIKit
 
 class MissoesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var saldoLabel: UILabel!
-
+    
     var missaoDAO = MissaoDAO()
     var missoes = [Missao]()
+    var celulaSelecionada:Bool = false
+    var linhaAtual = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,9 +28,10 @@ class MissoesViewController: UIViewController, UITableViewDataSource, UITableVie
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        celulaSelecionada = false
         tableView.reloadData()
     }
-
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -41,12 +44,29 @@ class MissoesViewController: UIViewController, UITableViewDataSource, UITableVie
         let cell = tableView.dequeueReusableCell(withIdentifier: "missaoIdentifier", for: indexPath)
         if let missaoCell = cell as? MissoesTableViewCell {
             let missao = missoes[indexPath.row]
-            missaoCell.nomeDaMissao.text = missao.nmMissao
-            missaoCell.valorDaMissao.text = "R$\(missao.vlrMissao)"
+            if indexPath.row == linhaAtual {
+                construirCelulaDaLinhaAtual(missaoCell: missaoCell, missao: missao)
+            } else {
+                construirOutrasCelulas(missaoCell: missaoCell, missao: missao)
+            }
         }
         return cell
     }
-
+    
+    func construirCelulaDaLinhaAtual(missaoCell: MissoesTableViewCell, missao: Missao) {
+        if (celulaSelecionada == false) {
+            missaoCell.nomeDaMissao.text = missao.nmMissao
+            missaoCell.valorDaMissao.text = "R$\(missao.vlrMissao)"
+        } else {
+            missaoCell.nomeDaMissao.text = "Teste"
+        }
+    }
+    
+    func construirOutrasCelulas(missaoCell: MissoesTableViewCell, missao: Missao) {
+        missaoCell.nomeDaMissao.text = missao.nmMissao
+        missaoCell.valorDaMissao.text = "R$\(missao.vlrMissao)"
+    }
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             missoes.remove(at: indexPath.row)
@@ -56,9 +76,29 @@ class MissoesViewController: UIViewController, UITableViewDataSource, UITableVie
         }
     }
     
+    //Guardar a linha atual e expandi-la quando clicada
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedRowIndex = indexPath
+        linhaAtual = selectedRowIndex.row
+        tableView.reloadData()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == linhaAtual {
+            if celulaSelecionada == false {
+                celulaSelecionada = true
+                return 40
+            } else {
+                celulaSelecionada = false
+                return 85
+            }
+        }
+        return 40
+    }
+    
+    //Passando os dados para a tela "Adicionar Missões"
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let adicionarMissoesViewController = segue.destination as! AdicionarMissoesViewController
         adicionarMissoesViewController.listaDeMissoes = self.missoes
     }
-    
-    }
+}

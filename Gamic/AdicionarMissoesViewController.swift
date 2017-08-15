@@ -8,10 +8,6 @@
 
 import UIKit
 
-protocol AddMissoesControllerDelegate {
-    func addMissoesControlerResponse()
-}
-
 class AdicionarMissoesViewController: UIViewController {
 
     
@@ -20,7 +16,6 @@ class AdicionarMissoesViewController: UIViewController {
     @IBOutlet weak var quantidadeDeDias: UITextField!
     @IBOutlet weak var btnConfirmar: UIButton!
     var listaDeMissoes = [Missao]()
-    var delegate: AddMissoesControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,11 +23,14 @@ class AdicionarMissoesViewController: UIViewController {
     }
     
     func adicionarMissao(sender: UIButton!) {
-        let nmMissao = nomeDaMissao.text!
-        let vlrMissao = Double(valorDaMissao.text!)
-        let qtdDias = Int(quantidadeDeDias.text!)
-        let missao = Missao(nmMissao: nmMissao, vlrMissao: vlrMissao!, qtdPorDia: 50, qtdDeDias: qtdDias!)
-        listaDeMissoes.append(missao)
+        listaDeMissoes.append(
+            Missao(
+                nmMissao: nomeDaMissao.text!,
+                vlrMissao: Double(valorDaMissao.text!)!,
+                qtdPorDia: 50,
+                qtdDeDias: Int(quantidadeDeDias.text!)!
+            )
+        )
         retornarParaMissoes()
     }
     
