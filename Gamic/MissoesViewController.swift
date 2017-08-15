@@ -16,7 +16,7 @@ class MissoesViewController: UIViewController, UITableViewDataSource, UITableVie
     var missaoDAO = MissaoDAO()
     var missoes = [Missao]()
     var celulaSelecionada:Bool = false
-    var linhaAtual = 0
+    var linhaAtual = -1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -97,9 +97,19 @@ class MissoesViewController: UIViewController, UITableViewDataSource, UITableVie
     
     //Guardar a linha atual e expandi-la quando clicada
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedRowIndex = indexPath
-        linhaAtual = selectedRowIndex.row
-        tableView.reloadData()
+        if linhaAtual != indexPath.row {
+            self.celulaSelecionada = true
+            self.linhaAtual = indexPath.row
+        } else {
+            self.celulaSelecionada = false
+            self.linhaAtual = -1
+        }
+        UIView.transition(with: self.tableView,
+                                  duration: 0.15,
+                                  options: [.curveEaseIn, .transitionCrossDissolve],
+                                  animations: { () -> Void in
+                                    self.tableView.reloadData()
+        }, completion: nil)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
