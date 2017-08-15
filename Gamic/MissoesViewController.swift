@@ -70,17 +70,20 @@ class MissoesViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     func exibirLinhaDoToggle(missaoCell: MissoesTableViewCell, missao: Missao) {
+        let qtdPorDia = String(format: "%.2f", arguments: [missao.qtdPorDia])
+        missaoCell.quantidadeDeDias.text = "\(missao.qtdDeDias) Dias"
+        missaoCell.quantidadePorDia.text = "R$\(qtdPorDia) p/ Dia"
         missaoCell.imgQuantidadeDeDias.isHidden = false
         missaoCell.imgQuatidadePorDia.isHidden = false
         missaoCell.quantidadeDeDias.isHidden = false
-        missaoCell.quantidadeDeDias.isHidden = false
+        missaoCell.quantidadePorDia.isHidden = false
     }
     
     func esconderLinhaDoToggle(missaoCell: MissoesTableViewCell, missao: Missao) {
         missaoCell.imgQuantidadeDeDias.isHidden = true
         missaoCell.imgQuatidadePorDia.isHidden = true
         missaoCell.quantidadeDeDias.isHidden = true
-        missaoCell.quantidadeDeDias.isHidden = true
+        missaoCell.quantidadePorDia.isHidden = true
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
@@ -106,7 +109,7 @@ class MissoesViewController: UIViewController, UITableViewDataSource, UITableVie
                 return 40
             } else {
                 celulaSelecionada = false
-                return 85
+                return 75
             }
         }
         return 40

@@ -27,11 +27,15 @@ class AdicionarMissoesViewController: UIViewController {
             Missao(
                 nmMissao: nomeDaMissao.text!,
                 vlrMissao: Double(valorDaMissao.text!)!,
-                qtdPorDia: 50,
+                qtdPorDia: calcularQtdPorDia(vlrMissao: Double(valorDaMissao.text!)!, qtdDeDias: Int(quantidadeDeDias.text!)!),
                 qtdDeDias: Int(quantidadeDeDias.text!)!
             )
         )
         retornarParaMissoes()
+    }
+    
+    func calcularQtdPorDia(vlrMissao: Double, qtdDeDias: Int) -> Double {
+        return vlrMissao.divided(by: Double(qtdDeDias))
     }
     
     func retornarParaMissoes() {
