@@ -47,71 +47,124 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="42" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vd1-6j-GSz">
+                                    <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="97" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vd1-6j-GSz">
                                         <rect key="frame" x="0.0" y="194.5" width="343" height="344.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" selectionStyle="default" indentationWidth="10" reuseIdentifier="missaoIdentifier" rowHeight="42" id="moG-xc-IvS" customClass="MissoesTableViewCell" customModule="Gamic" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="343" height="42"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" selectionStyle="default" indentationWidth="10" reuseIdentifier="missaoIdentifier" rowHeight="97" id="moG-xc-IvS" customClass="MissoesTableViewCell" customModule="Gamic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="343" height="97"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="moG-xc-IvS" id="U67-kf-jGn">
-                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="42"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="97"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="top" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="x9m-OV-aEO" userLabel="Labels Stack View">
-                                                            <rect key="frame" x="8" y="8" width="327" height="25"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UGV-tv-32W">
+                                                            <rect key="frame" x="8" y="8" width="327" height="80.5"/>
                                                             <subviews>
-                                                                <stackView opaque="NO" contentMode="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gCg-1H-5eW" userLabel="Missao Label">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="215" height="25"/>
+                                                                <stackView opaque="NO" contentMode="top" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="x9m-OV-aEO" userLabel="Upper Stack View">
+                                                                    <rect key="frame" x="18.5" y="0.0" width="290.5" height="55.5"/>
                                                                     <subviews>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list" translatesAutoresizingMaskIntoConstraints="NO" id="Q7f-Le-oTh">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="25" id="Awz-pH-3ju"/>
-                                                                                <constraint firstAttribute="height" constant="25" id="fC9-UT-gZE"/>
-                                                                            </constraints>
-                                                                        </imageView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyU-bU-9Z5" userLabel="Missao">
-                                                                            <rect key="frame" x="30" y="0.0" width="185" height="25"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="185" id="qIu-GV-Y7V"/>
-                                                                            </constraints>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                            <nil key="textColor"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
+                                                                        <stackView opaque="NO" contentMode="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gCg-1H-5eW" userLabel="Missao Label">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="215" height="25"/>
+                                                                            <subviews>
+                                                                                <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list" translatesAutoresizingMaskIntoConstraints="NO" id="Q7f-Le-oTh">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="width" constant="25" id="Awz-pH-3ju"/>
+                                                                                        <constraint firstAttribute="height" constant="25" id="fC9-UT-gZE"/>
+                                                                                    </constraints>
+                                                                                </imageView>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyU-bU-9Z5" userLabel="Missao">
+                                                                                    <rect key="frame" x="30" y="0.0" width="185" height="25"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="width" constant="185" id="qIu-GV-Y7V"/>
+                                                                                    </constraints>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                        <stackView opaque="NO" contentMode="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QMl-D3-ImE" userLabel="Preco Label">
+                                                                            <rect key="frame" x="225" y="0.0" width="65.5" height="25"/>
+                                                                            <subviews>
+                                                                                <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coin-stack" translatesAutoresizingMaskIntoConstraints="NO" id="3Yo-1P-kwn">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="width" constant="25" id="Ei8-zS-Yu0"/>
+                                                                                        <constraint firstAttribute="height" constant="25" id="Xpx-uQ-6sI"/>
+                                                                                    </constraints>
+                                                                                </imageView>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZW-2j-aUP" userLabel="Preco">
+                                                                                    <rect key="frame" x="30" y="0.0" width="35.5" height="25"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
                                                                     </subviews>
                                                                 </stackView>
-                                                                <stackView opaque="NO" contentMode="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QMl-D3-ImE" userLabel="Preco Label">
-                                                                    <rect key="frame" x="225" y="0.0" width="102" height="25"/>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIc-2P-HrP" userLabel="Bottom Stack View">
+                                                                    <rect key="frame" x="23.5" y="55.5" width="280.5" height="25"/>
                                                                     <subviews>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coin-stack" translatesAutoresizingMaskIntoConstraints="NO" id="3Yo-1P-kwn">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="25" id="Ei8-zS-Yu0"/>
-                                                                                <constraint firstAttribute="height" constant="25" id="Xpx-uQ-6sI"/>
-                                                                            </constraints>
-                                                                        </imageView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZW-2j-aUP" userLabel="Preco">
-                                                                            <rect key="frame" x="30" y="0.0" width="72" height="25"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                            <nil key="textColor"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
+                                                                        <stackView opaque="NO" contentMode="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Vx1-go-Hv3" userLabel="Missao Label">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="215" height="25"/>
+                                                                            <subviews>
+                                                                                <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="piggy-bank" translatesAutoresizingMaskIntoConstraints="NO" id="rd0-dZ-ce7">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="width" constant="25" id="5lH-pw-JCF"/>
+                                                                                        <constraint firstAttribute="height" constant="25" id="aGJ-th-ogW"/>
+                                                                                    </constraints>
+                                                                                </imageView>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbK-x4-Vx4" userLabel="Quantidade Por Dia">
+                                                                                    <rect key="frame" x="30" y="0.0" width="185" height="25"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="width" constant="185" id="SsR-ey-e9K"/>
+                                                                                    </constraints>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                        <stackView opaque="NO" contentMode="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="lsk-N5-Rzl" userLabel="Preco Label">
+                                                                            <rect key="frame" x="215" y="0.0" width="65.5" height="25"/>
+                                                                            <subviews>
+                                                                                <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="small-calendar" translatesAutoresizingMaskIntoConstraints="NO" id="ZOc-fC-FZu">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="25" id="DJq-AR-T77"/>
+                                                                                        <constraint firstAttribute="width" constant="25" id="QnM-6d-JKR"/>
+                                                                                    </constraints>
+                                                                                </imageView>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKy-R0-efs" userLabel="Quatidade De Dias">
+                                                                                    <rect key="frame" x="30" y="0.0" width="35.5" height="25"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
                                                                     </subviews>
                                                                 </stackView>
                                                             </subviews>
                                                         </stackView>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstItem="x9m-OV-aEO" firstAttribute="leading" secondItem="U67-kf-jGn" secondAttribute="leadingMargin" id="576-p0-wOn"/>
-                                                        <constraint firstItem="x9m-OV-aEO" firstAttribute="top" secondItem="U67-kf-jGn" secondAttribute="topMargin" id="IFS-Y7-fik"/>
-                                                        <constraint firstAttribute="trailingMargin" secondItem="x9m-OV-aEO" secondAttribute="trailing" id="T07-XI-X54"/>
-                                                        <constraint firstItem="x9m-OV-aEO" firstAttribute="bottom" secondItem="U67-kf-jGn" secondAttribute="bottomMargin" id="hqo-iZ-TSY"/>
+                                                        <constraint firstItem="UGV-tv-32W" firstAttribute="leading" secondItem="U67-kf-jGn" secondAttribute="leadingMargin" id="6Wx-ug-Bmg"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="UGV-tv-32W" secondAttribute="trailing" id="6zB-Zd-B4C"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="UGV-tv-32W" secondAttribute="bottom" id="AQB-O2-0bs"/>
+                                                        <constraint firstItem="UGV-tv-32W" firstAttribute="top" secondItem="U67-kf-jGn" secondAttribute="topMargin" id="V5a-Xn-2XW"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
+                                                    <outlet property="imgQuantidadeDeDias" destination="ZOc-fC-FZu" id="gD3-gX-Vtz"/>
+                                                    <outlet property="imgQuatidadePorDia" destination="rd0-dZ-ce7" id="BB0-xh-GRK"/>
                                                     <outlet property="nomeDaMissao" destination="cyU-bU-9Z5" id="KWo-WD-oqO"/>
+                                                    <outlet property="quantidadeDeDias" destination="eKy-R0-efs" id="pbL-hn-4NK"/>
+                                                    <outlet property="quantidadePorDia" destination="PbK-x4-Vx4" id="fu3-X5-kEx"/>
                                                     <outlet property="valorDaMissao" destination="sZW-2j-aUP" id="JN3-2X-wPP"/>
                                                 </connections>
                                             </tableViewCell>
@@ -150,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y4e-F7-fCI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1891.304347826087" y="1071.1956521739132"/>
+            <point key="canvasLocation" x="-1892" y="1070.9145427286358"/>
         </scene>
         <!--UIViewController-KJN-H1-CbR-->
         <scene sceneID="qWG-PF-rwT">
@@ -165,6 +218,8 @@
         <image name="coin-stack" width="24" height="24"/>
         <image name="list" width="24" height="24"/>
         <image name="missoes" width="25" height="25"/>
+        <image name="piggy-bank" width="24" height="24"/>
         <image name="plus" width="256" height="256"/>
+        <image name="small-calendar" width="24" height="24"/>
     </resources>
 </document>

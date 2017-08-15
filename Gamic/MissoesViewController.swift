@@ -57,14 +57,30 @@ class MissoesViewController: UIViewController, UITableViewDataSource, UITableVie
         if (celulaSelecionada == false) {
             missaoCell.nomeDaMissao.text = missao.nmMissao
             missaoCell.valorDaMissao.text = "R$\(missao.vlrMissao)"
+            esconderLinhaDoToggle(missaoCell: missaoCell, missao: missao)
         } else {
-            missaoCell.nomeDaMissao.text = "Teste"
+            exibirLinhaDoToggle(missaoCell: missaoCell, missao: missao)
         }
     }
     
     func construirOutrasCelulas(missaoCell: MissoesTableViewCell, missao: Missao) {
         missaoCell.nomeDaMissao.text = missao.nmMissao
         missaoCell.valorDaMissao.text = "R$\(missao.vlrMissao)"
+        esconderLinhaDoToggle(missaoCell: missaoCell, missao: missao)
+    }
+    
+    func exibirLinhaDoToggle(missaoCell: MissoesTableViewCell, missao: Missao) {
+        missaoCell.imgQuantidadeDeDias.isHidden = false
+        missaoCell.imgQuatidadePorDia.isHidden = false
+        missaoCell.quantidadeDeDias.isHidden = false
+        missaoCell.quantidadeDeDias.isHidden = false
+    }
+    
+    func esconderLinhaDoToggle(missaoCell: MissoesTableViewCell, missao: Missao) {
+        missaoCell.imgQuantidadeDeDias.isHidden = true
+        missaoCell.imgQuatidadePorDia.isHidden = true
+        missaoCell.quantidadeDeDias.isHidden = true
+        missaoCell.quantidadeDeDias.isHidden = true
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
