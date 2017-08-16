@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aLl-rl-tqt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aLl-rl-tqt">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="42b-AH-fws" id="Bq3-GG-OZT">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -32,7 +32,7 @@
                             <outlet property="delegate" destination="aLl-rl-tqt" id="GjW-1C-d2z"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Rank" image="king" id="oua-qS-XsG"/>
+                    <tabBarItem key="tabBarItem" title="Rank" image="Rank2" selectedImage="Rank2Filled" id="oua-qS-XsG"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tid-S3-6ah" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -41,6 +41,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="king" width="25" height="25"/>
+        <image name="Rank2" width="25" height="25"/>
+        <image name="Rank2Filled" width="25" height="25"/>
     </resources>
 </document>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hx2-2V-8fW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hx2-2V-8fW">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,7 +13,7 @@
         <scene sceneID="eSz-AT-JIR">
             <objects>
                 <navigationController id="hx2-2V-8fW" userLabel="NavMissoes" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Missões" image="missoes" id="Xg3-7X-Mb1"/>
+                    <tabBarItem key="tabBarItem" title="Missões" image="Goal" selectedImage="GoalFilled" id="Xg3-7X-Mb1"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="i9h-PP-xrQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -39,6 +39,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="missoes" width="25" height="25"/>
+        <image name="Goal" width="25" height="25"/>
+        <image name="GoalFilled" width="25" height="25"/>
     </resources>
 </document>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ERx-JO-i5I">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ERx-JO-i5I">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -56,7 +56,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="343" height="78"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="moG-xc-IvS" id="U67-kf-jGn">
-                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="77"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="77.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="top" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UGV-tv-32W">
@@ -202,7 +202,7 @@
                             <constraint firstItem="ffH-rg-eec" firstAttribute="top" secondItem="rjr-zY-pzE" secondAttribute="bottom" id="eLA-ly-M4a"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="1" title="Missões" image="missoes" id="WGz-R7-nj7"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Missões" image="Goal" selectedImage="GoalFilled" id="WGz-R7-nj7"/>
                     <navigationItem key="navigationItem" title="Missões" id="IF7-xc-jmi">
                         <barButtonItem key="backBarButtonItem" title="Missões" id="Ejz-jo-8HM"/>
                     </navigationItem>
@@ -227,9 +227,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Goal" width="25" height="25"/>
+        <image name="GoalFilled" width="25" height="25"/>
         <image name="coin-stack" width="24" height="24"/>
         <image name="list" width="24" height="24"/>
-        <image name="missoes" width="25" height="25"/>
         <image name="piggy-bank" width="24" height="24"/>
         <image name="plus" width="256" height="256"/>
         <image name="small-calendar" width="24" height="24"/>
