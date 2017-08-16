@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F9A979E1F4495000061D38A /* GastosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A979D1F4495000061D38A /* GastosTableViewCell.swift */; };
+		3F9A97A01F4495060061D38A /* GastosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A979F1F4495060061D38A /* GastosViewController.swift */; };
+		3F9A97A21F44950C0061D38A /* Gasto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A97A11F44950C0061D38A /* Gasto.swift */; };
+		3F9A97A41F4495140061D38A /* AdicionarGastosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A97A31F4495140061D38A /* AdicionarGastosViewController.swift */; };
 		3F9FAE081F3DF52600520ECD /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE061F3DF52600520ECD /* Perfil.storyboard */; };
 		3F9FAE0A1F3DF53600520ECD /* Gastos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE091F3DF53600520ECD /* Gastos.storyboard */; };
 		3F9FAE0D1F3DF54700520ECD /* AdicionarGastos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE0B1F3DF54700520ECD /* AdicionarGastos.storyboard */; };
@@ -35,6 +39,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F9A979D1F4495000061D38A /* GastosTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GastosTableViewCell.swift; sourceTree = "<group>"; };
+		3F9A979F1F4495060061D38A /* GastosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GastosViewController.swift; sourceTree = "<group>"; };
+		3F9A97A11F44950C0061D38A /* Gasto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gasto.swift; sourceTree = "<group>"; };
+		3F9A97A31F4495140061D38A /* AdicionarGastosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdicionarGastosViewController.swift; sourceTree = "<group>"; };
 		3F9FAE071F3DF52600520ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Perfil.storyboard; sourceTree = "<group>"; };
 		3F9FAE091F3DF53600520ECD /* Gastos.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Gastos.storyboard; sourceTree = "<group>"; };
 		3F9FAE0C1F3DF54700520ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AdicionarGastos.storyboard; sourceTree = "<group>"; };
@@ -151,6 +159,7 @@
 		741907E01F3E2C2700E5BCF4 /* Gastos */ = {
 			isa = PBXGroup;
 			children = (
+				3F9A97A11F44950C0061D38A /* Gasto.swift */,
 			);
 			name = Gastos;
 			sourceTree = "<group>";
@@ -190,6 +199,9 @@
 		741907E51F3E425700E5BCF4 /* Gastos */ = {
 			isa = PBXGroup;
 			children = (
+				3F9A97A31F4495140061D38A /* AdicionarGastosViewController.swift */,
+				3F9A979F1F4495060061D38A /* GastosViewController.swift */,
+				3F9A979D1F4495000061D38A /* GastosTableViewCell.swift */,
 			);
 			name = Gastos;
 			sourceTree = "<group>";
@@ -371,11 +383,15 @@
 				749D42511F43F0BE00F69FA1 /* ConquistasTableViewCell.swift in Sources */,
 				74B1FBDE1F41F5DF004342CF /* Perfil.swift in Sources */,
 				74F141151F3CDBAB0092C069 /* ViewController.swift in Sources */,
+				3F9A979E1F4495000061D38A /* GastosTableViewCell.swift in Sources */,
+				3F9A97A21F44950C0061D38A /* Gasto.swift in Sources */,
 				749D42551F43F1D400F69FA1 /* Conquistas.swift in Sources */,
+				3F9A97A41F4495140061D38A /* AdicionarGastosViewController.swift in Sources */,
 				74E56D1C1F41D36B006D516C /* Missao.swift in Sources */,
 				74F141131F3CDBAB0092C069 /* AppDelegate.swift in Sources */,
 				74F1412A1F3CDC490092C069 /* CoreDataManager.swift in Sources */,
 				749D42531F43F10A00F69FA1 /* ConquistasViewController.swift in Sources */,
+				3F9A97A01F4495060061D38A /* GastosViewController.swift in Sources */,
 				741907EB1F3E42BD00E5BCF4 /* MissoesTableViewCell.swift in Sources */,
 				74F1411B1F3CDBAB0092C069 /* Gamic.xcdatamodeld in Sources */,
 			);
