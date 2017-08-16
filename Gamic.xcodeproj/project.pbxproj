@@ -19,11 +19,11 @@
 		3F9FAE141F3DF58800520ECD /* AdicionarMissoes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE131F3DF58800520ECD /* AdicionarMissoes.storyboard */; };
 		3F9FAE171F3DF59400520ECD /* NavMissoes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE151F3DF59400520ECD /* NavMissoes.storyboard */; };
 		3F9FAE191F3DF5A300520ECD /* Conquistas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE181F3DF5A300520ECD /* Conquistas.storyboard */; };
-		3F9FAE1C1F3DF5B200520ECD /* Rank.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE1A1F3DF5B200520ECD /* Rank.storyboard */; };
 		3F9FAE231F3DFBD600520ECD /* DetalhesGastos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9FAE221F3DFBD600520ECD /* DetalhesGastos.storyboard */; };
 		741907EB1F3E42BD00E5BCF4 /* MissoesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741907EA1F3E42BD00E5BCF4 /* MissoesTableViewCell.swift */; };
 		7471FC971F422180003671FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7471FC961F422180003671FE /* Assets.xcassets */; };
 		7471FC991F422CFB003671FE /* AdicionarMissoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7471FC981F422CFB003671FE /* AdicionarMissoesViewController.swift */; };
+		747F37D41F44C3D200FBC8D4 /* Rank.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 747F37D21F44C3D200FBC8D4 /* Rank.storyboard */; };
 		749D42511F43F0BE00F69FA1 /* ConquistasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D42501F43F0BE00F69FA1 /* ConquistasTableViewCell.swift */; };
 		749D42531F43F10A00F69FA1 /* ConquistasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D42521F43F10A00F69FA1 /* ConquistasViewController.swift */; };
 		749D42551F43F1D400F69FA1 /* Conquistas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749D42541F43F1D400F69FA1 /* Conquistas.swift */; };
@@ -51,11 +51,11 @@
 		3F9FAE131F3DF58800520ECD /* AdicionarMissoes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AdicionarMissoes.storyboard; sourceTree = "<group>"; };
 		3F9FAE161F3DF59400520ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NavMissoes.storyboard; sourceTree = "<group>"; };
 		3F9FAE181F3DF5A300520ECD /* Conquistas.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Conquistas.storyboard; sourceTree = "<group>"; };
-		3F9FAE1B1F3DF5B200520ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Rank.storyboard; sourceTree = "<group>"; };
 		3F9FAE221F3DFBD600520ECD /* DetalhesGastos.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetalhesGastos.storyboard; sourceTree = "<group>"; };
 		741907EA1F3E42BD00E5BCF4 /* MissoesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissoesTableViewCell.swift; sourceTree = "<group>"; };
 		7471FC961F422180003671FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7471FC981F422CFB003671FE /* AdicionarMissoesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdicionarMissoesViewController.swift; sourceTree = "<group>"; };
+		747F37D31F44C3D200FBC8D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Rank.storyboard; sourceTree = "<group>"; };
 		749D42501F43F0BE00F69FA1 /* ConquistasTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConquistasTableViewCell.swift; sourceTree = "<group>"; };
 		749D42521F43F10A00F69FA1 /* ConquistasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConquistasViewController.swift; sourceTree = "<group>"; };
 		749D42541F43F1D400F69FA1 /* Conquistas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conquistas.swift; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 		3F9FAE1D1F3DF5E300520ECD /* Rank */ = {
 			isa = PBXGroup;
 			children = (
-				3F9FAE1A1F3DF5B200520ECD /* Rank.storyboard */,
+				747F37D21F44C3D200FBC8D4 /* Rank.storyboard */,
 			);
 			name = Rank;
 			sourceTree = "<group>";
@@ -360,9 +360,9 @@
 				3F9FAE081F3DF52600520ECD /* Perfil.storyboard in Resources */,
 				3F9FAE0F1F3DF56C00520ECD /* NavAdicionarGastos.storyboard in Resources */,
 				3F9FAE121F3DF57900520ECD /* Missoes.storyboard in Resources */,
-				3F9FAE1C1F3DF5B200520ECD /* Rank.storyboard in Resources */,
 				7471FC971F422180003671FE /* Assets.xcassets in Resources */,
 				3F9FAE0A1F3DF53600520ECD /* Gastos.storyboard in Resources */,
+				747F37D41F44C3D200FBC8D4 /* Rank.storyboard in Resources */,
 				3F9FAE0D1F3DF54700520ECD /* AdicionarGastos.storyboard in Resources */,
 				3F9FAE141F3DF58800520ECD /* AdicionarMissoes.storyboard in Resources */,
 				3F9FAE171F3DF59400520ECD /* NavMissoes.storyboard in Resources */,
@@ -432,10 +432,10 @@
 			name = NavMissoes.storyboard;
 			sourceTree = "<group>";
 		};
-		3F9FAE1A1F3DF5B200520ECD /* Rank.storyboard */ = {
+		747F37D21F44C3D200FBC8D4 /* Rank.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3F9FAE1B1F3DF5B200520ECD /* Base */,
+				747F37D31F44C3D200FBC8D4 /* Base */,
 			);
 			name = Rank.storyboard;
 			sourceTree = "<group>";
