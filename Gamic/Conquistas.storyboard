@@ -39,7 +39,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Conquistas" id="0i1-PN-yrF"/>
+                    <tabBarItem key="tabBarItem" title="Conquistas" image="trophy" id="0i1-PN-yrF"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dUP-Zx-JtX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -47,4 +47,7 @@
             <point key="canvasLocation" x="-2671" y="1796"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="trophy" width="25" height="25"/>
+    </resources>
 </document>

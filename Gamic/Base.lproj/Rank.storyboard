@@ -32,7 +32,7 @@
                             <outlet property="delegate" destination="aLl-rl-tqt" id="GjW-1C-d2z"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Rank" id="oua-qS-XsG"/>
+                    <tabBarItem key="tabBarItem" title="Rank" image="king" id="oua-qS-XsG"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tid-S3-6ah" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -40,4 +40,7 @@
             <point key="canvasLocation" x="-2674" y="2464"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="king" width="25" height="25"/>
+    </resources>
 </document>
