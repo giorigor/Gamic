@@ -29,7 +29,7 @@ class MissoesViewController: UIViewController, UITableViewDataSource, UITableVie
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         celulaSelecionada = false
-        tableView.reloadData()
+        recarregarTabela()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -104,11 +104,15 @@ class MissoesViewController: UIViewController, UITableViewDataSource, UITableVie
             self.celulaSelecionada = false
             self.linhaAtual = -1
         }
+        recarregarTabela()
+    }
+    
+    func recarregarTabela() {
         UIView.transition(with: self.tableView,
-                                  duration: 0.15,
-                                  options: [.curveEaseIn, .transitionCrossDissolve],
-                                  animations: { () -> Void in
-                                    self.tableView.reloadData()
+                          duration: 0.15,
+                          options: [.curveEaseIn, .transitionCrossDissolve],
+                          animations: { () -> Void in
+                            self.tableView.reloadData()
         }, completion: nil)
     }
     
