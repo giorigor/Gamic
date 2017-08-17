@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "boy.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "conquista.png",
       "scale" : "2x"
     },
     {

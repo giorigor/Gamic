@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--NavRank-->
+        <scene sceneID="Ywi-Fy-5hz">
+            <objects>
+                <navigationController storyboardIdentifier="NavRank" title="NavRank" useStoryboardIdentifierAsRestorationIdentifier="YES" id="boc-dj-KFi" userLabel="NavRank" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="5HJ-8P-WKR"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UD5-1J-RmJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="SpV-T5-ATe" kind="relationship" relationship="rootViewController" id="eXd-CW-1ja"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="flm-tE-UiX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5457" y="1975"/>
+        </scene>
+        <!--Rank-->
+        <scene sceneID="ct7-Mz-USF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Rank" id="SpV-T5-ATe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Oi6-Cj-92E"/>
+                    <navigationItem key="navigationItem" title="Rank" id="YCD-EE-HBL"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dHp-aU-QeA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5092" y="2083"/>
+        </scene>
+    </scenes>
+</document>

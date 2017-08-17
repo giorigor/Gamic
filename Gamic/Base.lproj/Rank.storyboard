@@ -6,14 +6,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Rank-->
         <scene sceneID="HHW-uH-Z0F">
             <objects>
-                <viewController title="Rank" id="Wgx-f5-j7Q" userLabel="Rank" sceneMemberID="viewController">
+                <viewController title="Rank" id="Wgx-f5-j7Q" userLabel="Rank" customClass="RankViewController" customModule="Gamic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fId-5J-I7w"/>
                         <viewControllerLayoutGuide type="bottom" id="ciC-nl-oLx"/>
@@ -22,132 +21,149 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0K7-Nf-qFq">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="Rank" id="poO-VN-kOl"/>
-                                </items>
-                            </navigationBar>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="1bw-A7-Nfi" userLabel="Content Stack">
-                                <rect key="frame" x="16" y="84" width="344" height="527"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="AEh-J9-QhR" userLabel="Upper Labels Stack View">
+                                <rect key="frame" x="31" y="85" width="322.5" height="24.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="UPR-D0-c2x" userLabel="Upper Stack View">
-                                        <rect key="frame" x="10.5" y="0.0" width="323.5" height="17"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posição" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKP-a5-O74">
-                                                <rect key="frame" x="0.0" y="0.0" width="58" height="17"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="58" id="qLb-kw-ebH"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nickname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZS-yd-M4K">
-                                                <rect key="frame" x="128" y="0.0" width="62" height="17"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="62" id="HsK-cW-zT6"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pontuação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dki-mz-rz0">
-                                                <rect key="frame" x="260" y="0.0" width="63.5" height="17"/>
-                                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="46" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="C3I-fz-Bl3">
-                                        <rect key="frame" x="0.0" y="24" width="344" height="503"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="rankIdentifier" rowHeight="46" id="ua0-Oa-r30">
-                                                <rect key="frame" x="0.0" y="28" width="344" height="46"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ua0-Oa-r30" id="GXO-MH-qdw">
-                                                    <rect key="frame" x="0.0" y="0.0" width="344" height="46"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Posição" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFV-hD-T4i">
+                                        <rect key="frame" x="0.0" y="0.0" width="64.5" height="24.5"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Nickname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgF-yv-QCY">
+                                        <rect key="frame" x="101.5" y="0.0" width="86" height="24.5"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Experiência" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1o-he-55H" userLabel="Experiência">
+                                        <rect key="frame" x="224.5" y="0.0" width="98" height="24.5"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="71" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1gw-BS-aeS">
+                                <rect key="frame" x="31" y="113" width="313" height="377"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" selectionStyle="default" indentationWidth="10" reuseIdentifier="rankIdentifier" rowHeight="71" id="9Je-9R-gPO" customClass="RankTableViewCell" customModule="Gamic" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="313" height="71"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Je-9R-gPO" id="Zsm-mq-P2g">
+                                            <rect key="frame" x="0.0" y="0.0" width="313" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="S7C-xL-ZWq" userLabel="Rank Info Stack">
+                                                    <rect key="frame" x="21" y="8" width="285.5" height="54"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="UCJ-ee-8fe" userLabel="Content Stack View">
-                                                            <rect key="frame" x="19" y="8" width="306.5" height="30"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="99º" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBR-5F-0ZI">
+                                                            <rect key="frame" x="0.0" y="17" width="23.5" height="20"/>
+                                                            <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qLl-RL-Rwf" userLabel="User Stack">
+                                                            <rect key="frame" x="33.5" y="0.0" width="182" height="54"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qnt-RM-Qch">
-                                                                    <rect key="frame" x="0.0" y="4.5" width="26" height="21"/>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="man" translatesAutoresizingMaskIntoConstraints="NO" id="fs4-ZP-dz3">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="width" constant="26" id="DXr-MS-Deb"/>
+                                                                        <constraint firstAttribute="width" constant="54" id="Evc-cV-JfG"/>
+                                                                        <constraint firstAttribute="height" constant="54" id="gQ2-Sn-PaF"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gWU-Pg-DyT" userLabel="User Profile Stack">
-                                                                    <rect key="frame" x="66" y="0.0" width="155.5" height="30"/>
-                                                                    <subviews>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xmR-N1-QUf">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="height" constant="30" id="5X7-R8-vig"/>
-                                                                                <constraint firstAttribute="width" constant="30" id="6nl-Na-jIL"/>
-                                                                            </constraints>
-                                                                        </imageView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cersei Lannister" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zi-t1-RXw">
-                                                                            <rect key="frame" x="35" y="0.0" width="120.5" height="30"/>
-                                                                            <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
-                                                                            <nil key="textColor"/>
-                                                                            <nil key="highlightedColor"/>
-                                                                        </label>
-                                                                    </subviews>
-                                                                </stackView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOB-dV-sHO">
-                                                                    <rect key="frame" x="261.5" y="4.5" width="45" height="21"/>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Eric Ribeiro" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2o0-KY-6J8">
+                                                                    <rect key="frame" x="62" y="18.5" width="120" height="17.5"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="width" constant="45" id="MdG-Op-Bp6"/>
+                                                                        <constraint firstAttribute="width" constant="120" id="eaa-Nq-4I7"/>
                                                                     </constraints>
-                                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="99999" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVy-oQ-0QB">
+                                                            <rect key="frame" x="225.5" y="18.5" width="60" height="17.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="60" id="x1c-MF-4P1"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
-                                                    <constraints>
-                                                        <constraint firstItem="UCJ-ee-8fe" firstAttribute="centerX" secondItem="GXO-MH-qdw" secondAttribute="centerX" id="BxW-tn-xTC"/>
-                                                        <constraint firstItem="UCJ-ee-8fe" firstAttribute="top" secondItem="GXO-MH-qdw" secondAttribute="topMargin" id="qNX-Sb-PCb"/>
-                                                    </constraints>
-                                                </tableViewCellContentView>
-                                            </tableViewCell>
-                                        </prototypes>
-                                    </tableView>
+                                                </stackView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="experiencia" destination="bVy-oQ-0QB" id="jxj-SS-R5E"/>
+                                            <outlet property="nomeDaImagem" destination="fs4-ZP-dz3" id="bf6-9L-wuj"/>
+                                            <outlet property="nomeDoUsuario" destination="2o0-KY-6J8" id="zgA-AY-6zH"/>
+                                            <outlet property="posicao" destination="kBR-5F-0ZI" id="QIb-cj-wtZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qpw-LS-gMy" userLabel="UserExp Stack View">
+                                <rect key="frame" x="33" y="522" width="309" height="79.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="tHZ-LE-gn2">
+                                        <rect key="frame" x="138.5" y="0.0" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="IYt-tI-KfW"/>
+                                            <constraint firstAttribute="height" constant="32" id="uZu-30-4YY"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" ambiguous="YES" text="Nível 99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDy-hi-Hnp">
+                                        <rect key="frame" x="130.5" y="37" width="48" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" verticalCompressionResistancePriority="751" ambiguous="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MIC-Uz-5M1">
+                                        <rect key="frame" x="0.0" y="58.5" width="309" height="2"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="309" id="uDy-h7-HMH"/>
+                                        </constraints>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="99999/99999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MxE-oz-HTj">
+                                        <rect key="frame" x="122.5" y="65.5" width="64" height="14"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="C3I-fz-Bl3" firstAttribute="leading" secondItem="1bw-A7-Nfi" secondAttribute="leading" id="esT-5i-bqa"/>
-                                </constraints>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue-background" translatesAutoresizingMaskIntoConstraints="NO" id="EFl-JO-Zb9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="1bw-A7-Nfi" firstAttribute="leading" secondItem="ddg-LV-aA6" secondAttribute="leadingMargin" id="04N-5q-WFq"/>
-                            <constraint firstItem="1bw-A7-Nfi" firstAttribute="top" secondItem="ddg-LV-aA6" secondAttribute="top" constant="84" id="2aA-VC-2M4"/>
-                            <constraint firstItem="ciC-nl-oLx" firstAttribute="top" secondItem="1bw-A7-Nfi" secondAttribute="bottom" constant="7" id="4VG-ow-B3p"/>
-                            <constraint firstItem="1bw-A7-Nfi" firstAttribute="centerX" secondItem="ddg-LV-aA6" secondAttribute="centerX" id="5Cw-7v-hEY"/>
-                            <constraint firstItem="1bw-A7-Nfi" firstAttribute="centerX" secondItem="0K7-Nf-qFq" secondAttribute="centerX" id="Aj5-9x-4ia"/>
-                            <constraint firstItem="1bw-A7-Nfi" firstAttribute="top" secondItem="0K7-Nf-qFq" secondAttribute="bottom" constant="12" id="WW6-cQ-ylC"/>
-                            <constraint firstItem="0K7-Nf-qFq" firstAttribute="leading" secondItem="ddg-LV-aA6" secondAttribute="leading" id="jEs-h4-OtR"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Rank" image="Rank2" selectedImage="Rank2Filled" id="Lv3-37-XBQ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="1gw-BS-aeS" id="Abb-lw-qyU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A3f-Fs-PXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5092" y="2082.9085457271367"/>
+            <point key="canvasLocation" x="-5093.6000000000004" y="2082.008995502249"/>
         </scene>
     </scenes>
     <resources>
         <image name="Rank2" width="25" height="25"/>
         <image name="Rank2Filled" width="25" height="25"/>
+        <image name="blue-background" width="600" height="402"/>
+        <image name="man" width="512" height="512"/>
+        <image name="pikachu" width="256" height="256"/>
     </resources>
 </document>
