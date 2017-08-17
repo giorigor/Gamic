@@ -8,28 +8,71 @@
 
 import UIKit
 
-class AdicionarGastosViewController: UIViewController {
-
+class AdicionarGastosViewController: UIViewController, UIPickerViewDelegate , UIPickerViewDataSource {
+    
+    @IBOutlet weak var nomeDoGasto: UITextField!
+    @IBOutlet weak var valorDoGasto: UITextField!
+    @IBOutlet weak var categoriaDoGasto: UITextField!
+    @IBOutlet weak var btnConfirmar: UIButton!
+    
+    var listaDeGastos = [Gasto]()
+    var pickOption = ["Eletrônicos", "Lanches", "Transportes", "Lazer", "Diversos"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        btnConfirmar.addTarget(self, action: #selector(adicionarGasto), for: .touchUpInside)
+        let pickerView = UIPickerView()
+        pickerView.delegate = self
+        categoriaDoGasto.inputView = pickerView
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
     }
-    */
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickOption.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickOption[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        categoriaDoGasto.text = pickOption[row]
+    }
+    
+    func adicionarGasto(sender: UIButton!) {
+        listaDeGastos.append(
+            Gasto(
+                nmGasto: nomeDoGasto.text!,
+                vlrGasto: Double(valorDoGasto.text!)!,
+                nmCategoria: String(categoriaDoGasto.text!)!
+            )
+        )
+        retornarParaGastos()
+    }
+    
+    func calcularQtdPorDia(vlrMissao: Double, qtdDeDias: Int) -> Double {
+        return vlrMissao.divided(by: Double(qtdDeDias))
+    }
+    
+    func retornarParaGastos() {
+        let gastosViewController = self.navigationController?.viewControllers.first as! GastosViewController
+        gastosViewController.gastos = listaDeGastos
+        _ = navigationController?.popViewController(animated: true)
+    }
+}
 
+extension UIToolbar {
+    func ToolbarPiker(mySelect : Selector) -> UIToolbar {
+        let toolBar = UIToolbar()
+        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.plain, target: self, action: mySelect)
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        toolBar.setItems([ spaceButton, doneButton], animated: false)
+        toolBar.isUserInteractionEnabled = true
+        
+        return toolBar
+    }
 }

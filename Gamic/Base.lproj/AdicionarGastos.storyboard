@@ -26,7 +26,7 @@
                                 <rect key="frame" x="112" y="45" width="150" height="150"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="hXe-UV-Sss" userLabel="Labels Stack View">
-                                <rect key="frame" x="37" y="277" width="300" height="140"/>
+                                <rect key="frame" x="37" y="228" width="300" height="140"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ghT-d2-MGE">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="29.5"/>
@@ -50,7 +50,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Categoria" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ps0-9b-yL8">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Categoria" borderStyle="roundedRect" placeholder="Categoria" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ps0-9b-yL8">
                                         <rect key="frame" x="0.0" y="110.5" width="300" height="29.5"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -68,18 +68,22 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rli-ua-NjR">
-                                <rect key="frame" x="155" y="475" width="64" height="64"/>
+                                <rect key="frame" x="155" y="429" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="iba-XB-TMV"/>
                                     <constraint firstAttribute="height" constant="64" id="igc-vL-MZ8"/>
                                 </constraints>
                                 <state key="normal" title="Confirmar" image="confirmar"/>
                             </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wa2-7n-nKh">
+                                <rect key="frame" x="16" y="639" width="343" height="28"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="hXe-UV-Sss" firstAttribute="top" secondItem="b8h-39-ERL" secondAttribute="bottom" constant="82" id="47C-oe-SuU"/>
-                            <constraint firstItem="rli-ua-NjR" firstAttribute="top" secondItem="hXe-UV-Sss" secondAttribute="bottom" constant="58" id="Eml-AD-91e"/>
+                            <constraint firstItem="hXe-UV-Sss" firstAttribute="top" secondItem="b8h-39-ERL" secondAttribute="bottom" constant="33" id="47C-oe-SuU"/>
+                            <constraint firstItem="rli-ua-NjR" firstAttribute="top" secondItem="hXe-UV-Sss" secondAttribute="bottom" constant="61" id="Eml-AD-91e"/>
                             <constraint firstItem="b8h-39-ERL" firstAttribute="top" secondItem="clc-7K-S8v" secondAttribute="bottom" constant="25" id="Ghq-nL-rUF"/>
                             <constraint firstItem="b8h-39-ERL" firstAttribute="leading" secondItem="qTg-t0-XiD" secondAttribute="leadingMargin" constant="96" id="Y9g-of-xDw"/>
                             <constraint firstItem="rli-ua-NjR" firstAttribute="centerX" secondItem="hXe-UV-Sss" secondAttribute="centerX" id="krJ-3I-iVL"/>
@@ -90,6 +94,12 @@
                     <navigationItem key="navigationItem" title="Adicionar Gastos" id="G2G-DR-QX7">
                         <barButtonItem key="backBarButtonItem" title="Gastos" id="YED-fq-wqw"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="btnConfirmar" destination="rli-ua-NjR" id="X5v-gf-IsL"/>
+                        <outlet property="categoriaDoGasto" destination="Ps0-9b-yL8" id="Pic-JP-dk4"/>
+                        <outlet property="nomeDoGasto" destination="ghT-d2-MGE" id="Uz2-9X-ee5"/>
+                        <outlet property="valorDoGasto" destination="E5x-4O-Rq8" id="mTk-a8-CRt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="irz-Kw-WRk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

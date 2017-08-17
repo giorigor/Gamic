@@ -120,10 +120,10 @@ class GastosViewController: UIViewController, UITableViewDataSource, UITableView
         }
         return 40
     }
-}
-    /*//Passando os dados para a tela "Adicionar Missões"
+    
+    //Passando os dados para a tela "Adicionar Gastos"
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let adicionarGastosViewController = segue.destination as! AdicionarGastosViewController
         adicionarGastosViewController.listaDeGastos = self.gastos
     }
-}*/
+}
