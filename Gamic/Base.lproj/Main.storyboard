@@ -23,7 +23,7 @@
                         <segue destination="QMK-hg-UBQ" kind="relationship" relationship="viewControllers" id="0hf-qz-pLd"/>
                         <segue destination="DGU-iE-YLJ" kind="relationship" relationship="viewControllers" id="qWl-lr-hPR"/>
                         <segue destination="u6m-bx-f2c" kind="relationship" relationship="viewControllers" id="Ctb-Tc-TAG"/>
-                        <segue destination="yuB-X6-rXs" kind="relationship" relationship="viewControllers" id="CJ6-VL-zWa"/>
+                        <segue destination="lYL-tZ-5OP" kind="relationship" relationship="viewControllers" id="nAL-UB-b3a"/>
                         <segue destination="630-WJ-mOL" kind="relationship" relationship="viewControllers" id="ZEf-51-awI"/>
                     </connections>
                 </tabBarController>
@@ -102,6 +102,7 @@
             <objects>
                 <viewControllerPlaceholder storyboardName="Conquistas" id="yuB-X6-rXs" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Q5v-Tq-jtN"/>
+                    <navigationItem key="navigationItem" id="ngq-It-N8I"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jgT-j5-ZMF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -127,6 +128,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G7Q-ZV-LaA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-5457" y="1975"/>
+        </scene>
+        <!--NavConquistas-->
+        <scene sceneID="nfR-ds-KQq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NavConquistas" id="lYL-tZ-5OP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Xqv-ud-sSG"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xi3-2B-rNB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4209" y="1837"/>
         </scene>
     </scenes>
 </document>

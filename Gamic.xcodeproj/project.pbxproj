@@ -31,6 +31,7 @@
 		74A6D1D71F4565D40039F97F /* Rank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A6D1D61F4565D40039F97F /* Rank.swift */; };
 		74A6D1D91F456A1E0039F97F /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A6D1D81F456A1E0039F97F /* RankViewController.swift */; };
 		74A6D1DB1F456A330039F97F /* RankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A6D1DA1F456A330039F97F /* RankTableViewCell.swift */; };
+		74A6D1DE1F457B390039F97F /* NavConquistas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74A6D1DC1F457B390039F97F /* NavConquistas.storyboard */; };
 		74B1FBDC1F41E25C004342CF /* MissoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1FBDB1F41E25C004342CF /* MissoesViewController.swift */; };
 		74B1FBDE1F41F5DF004342CF /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B1FBDD1F41F5DF004342CF /* Perfil.swift */; };
 		74E56D1C1F41D36B006D516C /* Missao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E56D1B1F41D36B006D516C /* Missao.swift */; };
@@ -67,6 +68,7 @@
 		74A6D1D61F4565D40039F97F /* Rank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rank.swift; sourceTree = "<group>"; };
 		74A6D1D81F456A1E0039F97F /* RankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
 		74A6D1DA1F456A330039F97F /* RankTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankTableViewCell.swift; sourceTree = "<group>"; };
+		74A6D1DD1F457B390039F97F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NavConquistas.storyboard; sourceTree = "<group>"; };
 		74B1FBDB1F41E25C004342CF /* MissoesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissoesViewController.swift; sourceTree = "<group>"; };
 		74B1FBDD1F41F5DF004342CF /* Perfil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Perfil.swift; sourceTree = "<group>"; };
 		74E56D1B1F41D36B006D516C /* Missao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Missao.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		3F9FAE1E1F3DF5E900520ECD /* Conquistas */ = {
 			isa = PBXGroup;
 			children = (
+				74A6D1DC1F457B390039F97F /* NavConquistas.storyboard */,
 				3F9FAE181F3DF5A300520ECD /* Conquistas.storyboard */,
 			);
 			name = Conquistas;
@@ -376,6 +379,7 @@
 				3F9FAE0A1F3DF53600520ECD /* Gastos.storyboard in Resources */,
 				747F37D41F44C3D200FBC8D4 /* Rank.storyboard in Resources */,
 				74A6D1D51F455C230039F97F /* NavRank.storyboard in Resources */,
+				74A6D1DE1F457B390039F97F /* NavConquistas.storyboard in Resources */,
 				3F9FAE0D1F3DF54700520ECD /* AdicionarGastos.storyboard in Resources */,
 				3F9FAE141F3DF58800520ECD /* AdicionarMissoes.storyboard in Resources */,
 				3F9FAE171F3DF59400520ECD /* NavMissoes.storyboard in Resources */,
@@ -454,6 +458,14 @@
 				747F37D31F44C3D200FBC8D4 /* Base */,
 			);
 			name = Rank.storyboard;
+			sourceTree = "<group>";
+		};
+		74A6D1DC1F457B390039F97F /* NavConquistas.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74A6D1DD1F457B390039F97F /* Base */,
+			);
+			name = NavConquistas.storyboard;
 			sourceTree = "<group>";
 		};
 		74F141161F3CDBAB0092C069 /* Main.storyboard */ = {

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="e7Q-2A-dXd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Conquistas-->
+        <scene sceneID="Cd3-qw-UFe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Conquistas" id="yuB-X6-rXs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Q5v-Tq-jtN"/>
+                    <navigationItem key="navigationItem" title="Conquistas" id="ngq-It-N8I"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jgT-j5-ZMF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2671" y="1796"/>
+        </scene>
+        <!--NavConquistas-->
+        <scene sceneID="U2w-EC-1Rn">
+            <objects>
+                <navigationController storyboardIdentifier="NavConquistas" title="NavConquistas" useStoryboardIdentifierAsRestorationIdentifier="YES" id="e7Q-2A-dXd" userLabel="NavConquistas" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Conquistas" image="trophy" selectedImage="TrophyFilled" id="4eN-vD-uRo"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lea-hz-cp8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="yuB-X6-rXs" kind="relationship" relationship="rootViewController" id="YNo-KR-kdg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d10-Fd-q8H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4209" y="1837"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TrophyFilled" width="25" height="25"/>
+        <image name="trophy" width="25" height="25"/>
+    </resources>
+</document>
