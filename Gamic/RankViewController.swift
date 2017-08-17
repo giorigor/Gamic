@@ -11,6 +11,9 @@ import UIKit
 class RankViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var nivel: UILabel!
+    @IBOutlet weak var barraDeExp: UIProgressView!
+    @IBOutlet weak var quantidadeDeExp: UILabel!
 
     var rankDAO = [Rank]()
     
@@ -19,6 +22,17 @@ class RankViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.rankDAO = RankDAO.getRank()
         tableView.delegate = self
         tableView.dataSource = self
+        exibirInfoUsuario()
+    }
+    
+    func exibirInfoUsuario() {
+        let perfil = PerfilDAO.getPerfil()
+        let exp = String(format: "%.0f", perfil.exp)
+        let limiteDoNivel: Double = 10000
+        let limiteDoNivelStr = String(format: "%.0f", limiteDoNivel)
+        nivel.text = "Nível \(perfil.nivel)"
+        barraDeExp.progress = Float(perfil.exp/limiteDoNivel)
+        quantidadeDeExp.text = "\(exp)/\(limiteDoNivelStr)"
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {

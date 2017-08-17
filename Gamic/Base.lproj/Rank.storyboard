@@ -151,6 +151,9 @@
                     <tabBarItem key="tabBarItem" title="Rank" image="Rank2" selectedImage="Rank2Filled" id="Lv3-37-XBQ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="barraDeExp" destination="MIC-Uz-5M1" id="5XU-Lg-kl7"/>
+                        <outlet property="nivel" destination="DDy-hi-Hnp" id="bp7-a5-2Fj"/>
+                        <outlet property="quantidadeDeExp" destination="MxE-oz-HTj" id="rTU-26-Io0"/>
                         <outlet property="tableView" destination="1gw-BS-aeS" id="Abb-lw-qyU"/>
                     </connections>
                 </viewController>
