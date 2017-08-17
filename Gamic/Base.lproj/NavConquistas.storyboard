@@ -1,46 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="e7Q-2A-dXd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YTj-LN-vw6">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Conquistas-->
-        <scene sceneID="Cd3-qw-UFe">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Conquistas" id="yuB-X6-rXs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Q5v-Tq-jtN"/>
-                    <navigationItem key="navigationItem" title="Conquistas" id="ngq-It-N8I"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jgT-j5-ZMF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2671" y="1796"/>
-        </scene>
         <!--NavConquistas-->
-        <scene sceneID="U2w-EC-1Rn">
+        <scene sceneID="Fdj-1h-V6c">
             <objects>
-                <navigationController storyboardIdentifier="NavConquistas" title="NavConquistas" useStoryboardIdentifierAsRestorationIdentifier="YES" id="e7Q-2A-dXd" userLabel="NavConquistas" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Conquistas" image="trophy" selectedImage="TrophyFilled" id="4eN-vD-uRo"/>
+                <navigationController storyboardIdentifier="NavConquistas" title="NavConquistas" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YTj-LN-vw6" userLabel="NavConquistas" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Conquistas" image="trophy" selectedImage="TrophyFilled" id="6DK-eO-Vm1"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lea-hz-cp8">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tDH-n9-4jM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="yuB-X6-rXs" kind="relationship" relationship="rootViewController" id="YNo-KR-kdg"/>
+                        <segue destination="ybs-jH-9ue" kind="relationship" relationship="rootViewController" id="xrg-K9-9oE"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="d10-Fd-q8H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3cC-7y-9Aq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4209" y="1837"/>
+            <point key="canvasLocation" x="-4266" y="1451"/>
+        </scene>
+        <!--Conquistas-->
+        <scene sceneID="YJO-gY-5vv">
+            <objects>
+                <viewController storyboardIdentifier="Conquistas" title="Conquistas" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ybs-jH-9ue" userLabel="Conquistas" customClass="ConquistasViewController" customModule="Gamic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aR2-a3-Kpz"/>
+                        <viewControllerLayoutGuide type="bottom" id="kXW-3v-bWG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mv1-1T-R47">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue-background" translatesAutoresizingMaskIntoConstraints="NO" id="Yic-dF-qAN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JmW-IB-mJx">
+                                <rect key="frame" x="17" y="292" width="343" height="263.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="conquistasIdentifier" rowHeight="44" id="PfJ-Tb-gyo" customClass="ConquistasTableViewCell" customModule="Gamic" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PfJ-Tb-gyo" id="skl-jy-uld">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="conquista" translatesAutoresizingMaskIntoConstraints="NO" id="3pV-eA-w46">
+                                                    <rect key="frame" x="16" y="8" width="32" height="32"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="32" id="FVR-HE-KFq"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idJ-1S-zdF">
+                                                    <rect key="frame" x="56" y="14" width="287" height="21"/>
+                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                                    <color key="textColor" red="0.1844147632" green="0.27981357470000001" blue="0.22508905700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="idJ-1S-zdF" firstAttribute="leading" secondItem="3pV-eA-w46" secondAttribute="trailing" constant="8" symbolic="YES" id="eNB-4B-uWT"/>
+                                                <constraint firstItem="3pV-eA-w46" firstAttribute="leading" secondItem="skl-jy-uld" secondAttribute="leadingMargin" constant="8" id="f6X-la-qfA"/>
+                                                <constraint firstItem="3pV-eA-w46" firstAttribute="centerY" secondItem="idJ-1S-zdF" secondAttribute="centerY" id="lJU-cd-Jg4"/>
+                                                <constraint firstAttribute="trailing" secondItem="idJ-1S-zdF" secondAttribute="trailing" id="nQZ-Sa-rev"/>
+                                                <constraint firstItem="idJ-1S-zdF" firstAttribute="top" secondItem="skl-jy-uld" secondAttribute="topMargin" constant="6" id="nlh-Fv-yw8"/>
+                                                <constraint firstItem="3pV-eA-w46" firstAttribute="top" secondItem="skl-jy-uld" secondAttribute="topMargin" id="rCj-uZ-eZW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descricaoDaConquista" destination="idJ-1S-zdF" id="TCh-Nq-Xdl"/>
+                                            <outlet property="imagemDaConquista" destination="3pV-eA-w46" id="Sql-hJ-2Vz"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="PIE-Kz-nGI">
+                                <rect key="frame" x="88" y="84" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="TgK-US-mrg"/>
+                                    <constraint firstAttribute="width" constant="200" id="egl-tK-kzt"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="UQA-v4-OIO" userLabel="UserExp Stack View">
+                                <rect key="frame" x="34" y="563" width="309" height="42.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" ambiguous="YES" text="Nível 99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYT-cU-T3e">
+                                        <rect key="frame" x="130.5" y="0.0" width="48" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
+                                        <color key="textColor" red="0.1844147632" green="0.27981357470000001" blue="0.22508905700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" verticalCompressionResistancePriority="751" ambiguous="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yrt-cs-K6u">
+                                        <rect key="frame" x="0.0" y="21.5" width="309" height="2"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="309" id="nk7-m2-N0E"/>
+                                        </constraints>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="99999/99999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgL-zy-b3D">
+                                        <rect key="frame" x="122.5" y="28.5" width="64" height="14"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="12"/>
+                                        <color key="textColor" red="0.1844147632" green="0.27981357470000001" blue="0.22508905700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Conquistas" image="trophy" selectedImage="TrophyFilled" id="n02-CV-Gcg"/>
+                    <navigationItem key="navigationItem" title="Conquistas" id="JDA-80-g1s"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="barraDeExp" destination="yrt-cs-K6u" id="fJd-gI-JIK"/>
+                        <outlet property="nivel" destination="bYT-cU-T3e" id="eUZ-m4-42s"/>
+                        <outlet property="quantidadeDeExp" destination="cgL-zy-b3D" id="5jQ-Yf-zVT"/>
+                        <outlet property="tableView" destination="JmW-IB-mJx" id="KSp-fg-JYb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zpq-j0-Sx9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3559" y="1451"/>
         </scene>
     </scenes>
     <resources>
         <image name="TrophyFilled" width="25" height="25"/>
+        <image name="blue-background" width="600" height="402"/>
+        <image name="conquista" width="32" height="32"/>
+        <image name="pikachu" width="256" height="256"/>
         <image name="trophy" width="25" height="25"/>
     </resources>
 </document>

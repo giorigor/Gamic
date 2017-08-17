@@ -20,124 +20,66 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="QMK-hg-UBQ" kind="relationship" relationship="viewControllers" id="0hf-qz-pLd"/>
-                        <segue destination="DGU-iE-YLJ" kind="relationship" relationship="viewControllers" id="qWl-lr-hPR"/>
-                        <segue destination="u6m-bx-f2c" kind="relationship" relationship="viewControllers" id="Ctb-Tc-TAG"/>
-                        <segue destination="lYL-tZ-5OP" kind="relationship" relationship="viewControllers" id="nAL-UB-b3a"/>
-                        <segue destination="630-WJ-mOL" kind="relationship" relationship="viewControllers" id="ZEf-51-awI"/>
+                        <segue destination="9Zr-Wj-FDg" kind="relationship" relationship="viewControllers" id="Uai-wT-DQt"/>
+                        <segue destination="Une-Ls-Ro5" kind="relationship" relationship="viewControllers" id="2yU-rt-AiX"/>
+                        <segue destination="t58-TC-qf5" kind="relationship" relationship="viewControllers" id="t6o-vJ-3Lt"/>
+                        <segue destination="YUM-OQ-kcc" kind="relationship" relationship="viewControllers" id="FDI-NX-lka"/>
+                        <segue destination="bQz-7k-8vD" kind="relationship" relationship="viewControllers" id="baX-7r-OZl"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q6a-CH-bg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-5092" y="1072"/>
         </scene>
-        <!--Perfil-->
-        <scene sceneID="AGx-bK-G5d">
+        <!--NavPerfil-->
+        <scene sceneID="R8K-OG-MLo">
             <objects>
-                <viewControllerPlaceholder storyboardName="Perfil" id="QMK-hg-UBQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="HQd-Ax-B87"/>
+                <viewControllerPlaceholder storyboardIdentifier="NavPerfil" storyboardName="NavPerfil" referencedIdentifier="NavPerfil" id="9Zr-Wj-FDg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="cDZ-Hs-GB4"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="X7G-AR-rBl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JCd-Sd-222" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2671" y="-349"/>
-        </scene>
-        <!--Gastos-->
-        <scene sceneID="1qM-Gy-CC4">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Gastos" storyboardName="Gastos" id="gqb-57-BgA" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="M8B-oF-TNU"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uMF-uo-eo2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1889" y="356"/>
-        </scene>
-        <!--UIViewController-Oie-1z-ak0-->
-        <scene sceneID="WR1-hf-S7u">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="UIViewController-Oie-1z-ak0" storyboardName="AdicionarGastos" referencedIdentifier="UIViewController-Oie-1z-ak0" id="av1-Zd-oQJ" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dGV-Pj-Wfz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1105" y="356"/>
-        </scene>
-        <!--NavAdicionarGastos-->
-        <scene sceneID="smj-zX-UvZ">
-            <objects>
-                <viewControllerPlaceholder storyboardName="NavAdicionarGastos" id="u6m-bx-f2c" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="lLG-2F-6lE"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fES-LG-iax" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2671" y="356"/>
-        </scene>
-        <!--Missoes-->
-        <scene sceneID="722-aM-Hy8">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Missoes" storyboardName="Missoes" id="9Jw-CZ-7sQ" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="kHS-CI-uLf"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kvt-CQ-5sE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1890" y="1072"/>
-        </scene>
-        <!--UIViewController-KJN-H1-CbR-->
-        <scene sceneID="zxS-hA-X3K">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="UIViewController-KJN-H1-CbR" storyboardName="AdicionarMissoes" referencedIdentifier="UIViewController-KJN-H1-CbR" id="Bdv-3z-VZH" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vPo-sR-dqj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1106" y="1072"/>
+            <point key="canvasLocation" x="-4542" y="888"/>
         </scene>
         <!--NavMissoes-->
-        <scene sceneID="eUl-ys-lyN">
+        <scene sceneID="1uG-Q8-ZKa">
             <objects>
-                <viewControllerPlaceholder storyboardName="NavMissoes" id="DGU-iE-YLJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="PqQ-Vs-zET"/>
+                <viewControllerPlaceholder storyboardName="NavMissoes" id="Une-Ls-Ro5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="11v-uy-1Cg"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cPD-iZ-pCF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IR5-1P-uHZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2674" y="1072"/>
-        </scene>
-        <!--Conquistas-->
-        <scene sceneID="Cd3-qw-UFe">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Conquistas" id="yuB-X6-rXs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Q5v-Tq-jtN"/>
-                    <navigationItem key="navigationItem" id="ngq-It-N8I"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jgT-j5-ZMF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2671" y="1796"/>
-        </scene>
-        <!--Rank-->
-        <scene sceneID="ct7-Mz-USF">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Rank" storyboardName="Rank" id="SpV-T5-ATe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Oi6-Cj-92E"/>
-                    <navigationItem key="navigationItem" id="YCD-EE-HBL"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dHp-aU-QeA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-5092" y="2083"/>
-        </scene>
-        <!--NavRank-->
-        <scene sceneID="Scv-rE-daD">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="NavRank" storyboardName="NavRank" referencedIdentifier="NavRank" id="630-WJ-mOL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="6Ng-4o-SrG"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="G7Q-ZV-LaA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-5457" y="1975"/>
+            <point key="canvasLocation" x="-4452" y="967"/>
         </scene>
         <!--NavConquistas-->
-        <scene sceneID="nfR-ds-KQq">
+        <scene sceneID="7RY-Ha-WgX">
             <objects>
-                <viewControllerPlaceholder storyboardName="NavConquistas" id="lYL-tZ-5OP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Xqv-ud-sSG"/>
+                <viewControllerPlaceholder storyboardIdentifier="NavConquistas" storyboardName="NavConquistas" referencedIdentifier="NavConquistas" id="YUM-OQ-kcc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="RrA-po-AvJ"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xi3-2B-rNB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tpp-4e-Ren" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4209" y="1837"/>
+            <point key="canvasLocation" x="-4467" y="1163"/>
+        </scene>
+        <!--NavRank-->
+        <scene sceneID="Fbn-4u-2G9">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="NavRank" storyboardName="NavRank" referencedIdentifier="NavRank" id="bQz-7k-8vD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="SF0-fc-DNF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ERV-xG-0Yu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4541" y="1244"/>
+        </scene>
+        <!--NavGastos-->
+        <scene sceneID="F7s-1w-eHU">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="NavGastos" storyboardName="NavGastos" referencedIdentifier="NavGastos" id="t58-TC-qf5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="cMM-KX-t7h"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0kt-jU-ux9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4395" y="1071"/>
         </scene>
     </scenes>
 </document>

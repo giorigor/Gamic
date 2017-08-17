@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zgq-J3-VbQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--NavMissoes-->
+        <scene sceneID="Cvd-6O-8Ec">
+            <objects>
+                <navigationController id="zgq-J3-VbQ" userLabel="NavMissoes" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Missões" image="Goal" selectedImage="GoalFilled" id="NCN-ZS-FHR"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eSp-dy-bfW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="lDK-1T-qlD" kind="relationship" relationship="rootViewController" id="SZG-Wc-4SJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x8f-aE-tga" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3961" y="1072"/>
+        </scene>
+        <!--Missoes-->
+        <scene sceneID="W9N-tC-oZ1">
+            <objects>
+                <viewController storyboardIdentifier="Missoes" id="lDK-1T-qlD" userLabel="Missoes" customClass="MissoesViewController" customModule="Gamic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yan-jg-MD5"/>
+                        <viewControllerLayoutGuide type="bottom" id="F23-24-R9j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tWd-8n-7ag">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="XZ2-xR-2G3" userLabel="Content Stack View">
+                                <rect key="frame" x="16" y="79" width="343" height="539"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pHX-3F-3na" userLabel="Upper Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="170"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ew-PE-myC">
+                                                <rect key="frame" x="101.5" y="0.0" width="140" height="140"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="140" id="gbc-Qy-uLq"/>
+                                                    <constraint firstAttribute="height" constant="140" id="vr1-tI-tWj"/>
+                                                </constraints>
+                                                <state key="normal" title="Adicionar Missão" image="plus"/>
+                                                <connections>
+                                                    <segue destination="4t1-Wu-Hgb" kind="show" id="rws-Jw-m4V">
+                                                        <nil key="action"/>
+                                                    </segue>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMY-Z8-JKg" userLabel="Saldo">
+                                                <rect key="frame" x="153.5" y="150" width="36" height="20"/>
+                                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="78" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Opx-1K-OeA">
+                                        <rect key="frame" x="0.0" y="195" width="343" height="344"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" selectionStyle="default" indentationWidth="10" reuseIdentifier="missaoIdentifier" rowHeight="78" id="wWH-HP-ir2" customClass="MissoesTableViewCell" customModule="Gamic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="343" height="78"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wWH-HP-ir2" id="Qyp-Cr-KfE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="78"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="top" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="d58-gD-zaQ">
+                                                            <rect key="frame" x="8" y="8" width="327" height="65"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="center" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cNn-Fd-dNa" userLabel="Upper Stack View">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="327" height="30"/>
+                                                                    <subviews>
+                                                                        <stackView opaque="NO" contentMode="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7be-Ei-0RS" userLabel="Missao Label">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="210" height="25"/>
+                                                                            <subviews>
+                                                                                <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list" translatesAutoresizingMaskIntoConstraints="NO" id="bHF-Bn-hKB">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="25" id="DAu-OJ-oJi"/>
+                                                                                        <constraint firstAttribute="width" constant="25" id="ERj-hd-2h6"/>
+                                                                                    </constraints>
+                                                                                </imageView>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SzD-8X-lsL" userLabel="Missao">
+                                                                                    <rect key="frame" x="30" y="0.0" width="180" height="25"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="width" constant="180" id="gF3-bB-e0v"/>
+                                                                                    </constraints>
+                                                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                        <stackView opaque="NO" contentMode="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qDb-ck-VUg" userLabel="Preco Label">
+                                                                            <rect key="frame" x="220" y="0.0" width="107" height="25"/>
+                                                                            <subviews>
+                                                                                <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coin-stack" translatesAutoresizingMaskIntoConstraints="NO" id="JBJ-u9-Y5w">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="width" constant="25" id="VEx-ji-AJh"/>
+                                                                                        <constraint firstAttribute="height" constant="25" id="g44-7X-XNn"/>
+                                                                                    </constraints>
+                                                                                </imageView>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpc-wj-WkN" userLabel="Preco">
+                                                                                    <rect key="frame" x="30" y="0.0" width="77" height="25"/>
+                                                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="30" id="wHL-la-sf9"/>
+                                                                    </constraints>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleAspectFit" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VXz-Hn-W9T" userLabel="Bottom Stack View">
+                                                                    <rect key="frame" x="45.5" y="30" width="236.5" height="35"/>
+                                                                    <subviews>
+                                                                        <stackView opaque="NO" contentMode="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="u6h-2V-0BL" userLabel="Missao Label">
+                                                                            <rect key="frame" x="0.0" y="5.5" width="146" height="24"/>
+                                                                            <subviews>
+                                                                                <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="piggy-bank" translatesAutoresizingMaskIntoConstraints="NO" id="1YH-Vu-act">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="25" height="24"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="25" id="8TR-SC-OBO"/>
+                                                                                        <constraint firstAttribute="width" constant="25" id="CIb-bm-C39"/>
+                                                                                    </constraints>
+                                                                                </imageView>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$100.00 p/ Dia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qr9-lz-KHi" userLabel="Quantidade Por Dia">
+                                                                                    <rect key="frame" x="31" y="0.0" width="115" height="24"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="width" constant="115" id="lba-39-r4m"/>
+                                                                                    </constraints>
+                                                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                        <stackView opaque="NO" contentMode="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cwg-NX-Uwr" userLabel="Preco Label">
+                                                                            <rect key="frame" x="146" y="5" width="90.5" height="25"/>
+                                                                            <subviews>
+                                                                                <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="small-calendar" translatesAutoresizingMaskIntoConstraints="NO" id="OrB-Pc-MN4">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="25" id="d3E-RW-cWu"/>
+                                                                                        <constraint firstAttribute="width" constant="25" id="fkG-G9-Nxt"/>
+                                                                                    </constraints>
+                                                                                </imageView>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="365 Dias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qxf-ES-pPA" userLabel="Quatidade De Dias">
+                                                                                    <rect key="frame" x="30" y="0.0" width="60.5" height="25"/>
+                                                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="35" id="EKy-o6-eJv"/>
+                                                                    </constraints>
+                                                                </stackView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailingMargin" secondItem="cNn-Fd-dNa" secondAttribute="trailing" id="Pdk-A5-9Z6"/>
+                                                                <constraint firstItem="cNn-Fd-dNa" firstAttribute="leading" secondItem="d58-gD-zaQ" secondAttribute="leadingMargin" id="wOY-qZ-tvM"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="d58-gD-zaQ" firstAttribute="leading" secondItem="Qyp-Cr-KfE" secondAttribute="leadingMargin" id="5nJ-6M-jd4"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="d58-gD-zaQ" secondAttribute="baseline" id="pnM-Gi-4YS"/>
+                                                        <constraint firstItem="d58-gD-zaQ" firstAttribute="top" secondItem="Qyp-Cr-KfE" secondAttribute="topMargin" id="tiZ-LI-qDB"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="d58-gD-zaQ" secondAttribute="trailing" id="ve8-GT-GPb"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="imgQuantidadeDeDias" destination="OrB-Pc-MN4" id="hbq-wL-Xhq"/>
+                                                    <outlet property="imgQuatidadePorDia" destination="1YH-Vu-act" id="iIq-6u-3Ii"/>
+                                                    <outlet property="nomeDaMissao" destination="SzD-8X-lsL" id="IcE-ZX-Nog"/>
+                                                    <outlet property="quantidadeDeDias" destination="Qxf-ES-pPA" id="5IR-gu-2MK"/>
+                                                    <outlet property="quantidadePorDia" destination="qr9-lz-KHi" id="fTj-bV-6wD"/>
+                                                    <outlet property="valorDaMissao" destination="Bpc-wj-WkN" id="Qfp-hQ-4mw"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <sections/>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="pHX-3F-3na" firstAttribute="leading" secondItem="XZ2-xR-2G3" secondAttribute="leading" id="Cq1-8Y-ovK"/>
+                                    <constraint firstItem="pHX-3F-3na" firstAttribute="top" secondItem="XZ2-xR-2G3" secondAttribute="top" id="HOR-vb-4Sy"/>
+                                    <constraint firstAttribute="bottom" secondItem="Opx-1K-OeA" secondAttribute="bottom" id="PWq-Ip-52k"/>
+                                    <constraint firstAttribute="trailing" secondItem="pHX-3F-3na" secondAttribute="trailing" id="ULj-Ze-iUw"/>
+                                    <constraint firstItem="Opx-1K-OeA" firstAttribute="leading" secondItem="XZ2-xR-2G3" secondAttribute="leading" id="VRt-7N-Ltd"/>
+                                    <constraint firstAttribute="trailing" secondItem="Opx-1K-OeA" secondAttribute="trailing" id="e6j-QW-F3C"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue-background" translatesAutoresizingMaskIntoConstraints="NO" id="tHT-75-WEN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="XZ2-xR-2G3" secondAttribute="trailing" id="5fb-Uy-kZC"/>
+                            <constraint firstItem="XZ2-xR-2G3" firstAttribute="top" secondItem="Yan-jg-MD5" secondAttribute="bottom" constant="15" id="ODD-5q-5eq"/>
+                            <constraint firstItem="F23-24-R9j" firstAttribute="top" secondItem="XZ2-xR-2G3" secondAttribute="bottom" id="bsK-gF-GFq"/>
+                            <constraint firstItem="XZ2-xR-2G3" firstAttribute="leading" secondItem="tWd-8n-7ag" secondAttribute="leadingMargin" id="hCG-LX-pqC"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="1" title="Missões" image="Goal" selectedImage="GoalFilled" id="mgn-Cp-Bn4"/>
+                    <navigationItem key="navigationItem" title="Missões" id="cEZ-zQ-wrq">
+                        <barButtonItem key="backBarButtonItem" title="Missões" id="LHu-o1-hqk"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="saldoLabel" destination="VMY-Z8-JKg" id="9fN-7Y-jcO"/>
+                        <outlet property="tableView" destination="Opx-1K-OeA" id="St0-hg-uf1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lMn-7W-OZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3167.1999999999998" y="1071.8140929535234"/>
+        </scene>
+        <!--AdicionarMissoes-->
+        <scene sceneID="7w8-Co-qPb">
+            <objects>
+                <viewController storyboardIdentifier="UIViewController-KJN-H1-CbR" title="AdicionarMissao" id="4t1-Wu-Hgb" userLabel="AdicionarMissoes" customClass="AdicionarMissoesViewController" customModule="Gamic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y2Q-Uc-rLw"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jxe-LK-bxF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3a6-fK-03U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue-background" translatesAutoresizingMaskIntoConstraints="NO" id="qCh-ez-NjP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Ppt-nu-ZY4" userLabel="Content Stack View">
+                                <rect key="frame" x="5" y="84" width="365" height="489"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="adicionar-missoes" translatesAutoresizingMaskIntoConstraints="NO" id="Q4r-RH-6ea">
+                                        <rect key="frame" x="100" y="0.0" width="165" height="165"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="165" id="EP6-kw-vSm"/>
+                                            <constraint firstAttribute="height" constant="165" id="eLe-29-EYS"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="gFI-sS-J8L" userLabel="Labels Stack View">
+                                        <rect key="frame" x="32.5" y="225" width="300" height="140"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jxJ-9f-bSO">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="29.5"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                        <color key="value" red="0.85098039219999999" green="0.80000000000000004" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Valor" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="BLp-LM-uMf">
+                                                <rect key="frame" x="0.0" y="55.5" width="300" height="29"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                        <color key="value" red="0.85098039219999999" green="0.80000000000000004" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quantidade de Dias" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Jaa-9D-rNM">
+                                                <rect key="frame" x="0.0" y="110.5" width="300" height="29.5"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                        <color key="value" red="0.85098039219999999" green="0.80000000000000004" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="Kxc-xS-yZn"/>
+                                            <constraint firstAttribute="width" constant="300" id="bXv-zd-cVd"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6S-d4-3OL">
+                                        <rect key="frame" x="150.5" y="425" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="DQv-Ak-JfW"/>
+                                            <constraint firstAttribute="width" constant="64" id="zmM-1R-TdV"/>
+                                        </constraints>
+                                        <state key="normal" title="Confirmar" image="confirmar"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ppt-nu-ZY4" firstAttribute="leading" secondItem="3a6-fK-03U" secondAttribute="leading" constant="5" id="MLs-in-2Be"/>
+                            <constraint firstItem="Ppt-nu-ZY4" firstAttribute="top" secondItem="Y2Q-Uc-rLw" secondAttribute="bottom" constant="20" id="oUc-Nj-CjY"/>
+                            <constraint firstAttribute="trailing" secondItem="Ppt-nu-ZY4" secondAttribute="trailing" constant="5" id="pJO-2W-bYJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Adicionar Missão" id="X9z-Bt-9LL"/>
+                    <connections>
+                        <outlet property="btnConfirmar" destination="f6S-d4-3OL" id="9HY-B1-xXq"/>
+                        <outlet property="nomeDaMissao" destination="jxJ-9f-bSO" id="jWC-0F-n1q"/>
+                        <outlet property="quantidadeDeDias" destination="Jaa-9D-rNM" id="bQq-K0-jOa"/>
+                        <outlet property="valorDaMissao" destination="BLp-LM-uMf" id="tRz-mk-WOg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CWl-ca-cqS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2244" y="1072"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Goal" width="25" height="25"/>
+        <image name="GoalFilled" width="25" height="25"/>
+        <image name="adicionar-missoes" width="256" height="256"/>
+        <image name="blue-background" width="600" height="402"/>
+        <image name="coin-stack" width="24" height="24"/>
+        <image name="confirmar" width="64" height="64"/>
+        <image name="list" width="24" height="24"/>
+        <image name="piggy-bank" width="24" height="24"/>
+        <image name="plus" width="256" height="256"/>
+        <image name="small-calendar" width="24" height="24"/>
+    </resources>
+</document>
