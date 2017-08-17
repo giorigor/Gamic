@@ -73,6 +73,12 @@ class AdicionarGastosViewController: UIViewController, UIPickerViewDelegate , UI
         view.endEditing(true)
         
     }
+    
+    // Sobreescrevemos o metodo touchesBegan(_: with:) que é chamado quando tocamos na tela. Isso faz com que você possa para a edição
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        // Chamamos a view para forçar que a edição pare
+        self.view.endEditing(true)
+    }
 }
 
 extension UIToolbar {
