@@ -16,7 +16,7 @@ class AdicionarGastosViewController: UIViewController, UIPickerViewDelegate , UI
     @IBOutlet weak var btnConfirmar: UIButton!
     
     var listaDeGastos = [Gasto]()
-    var pickOption = ["Eletrônicos", "Lanches", "Transportes", "Lazer", "Diversos"]
+    var pickOption = ["Categorias", "Eletrônicos", "Lanches", "Transportes", "Lazer", "Diversos"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,7 +89,7 @@ extension UIToolbar {
         toolBar.isTranslucent = true
         toolBar.tintColor = UIColor.black
         toolBar.sizeToFit()
-        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.plain, target: self, action: mySelect)
+        let doneButton = UIBarButtonItem(title: "Confirmar", style: UIBarButtonItemStyle.plain, target: self, action: mySelect)
         let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
         toolBar.setItems([ spaceButton, doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true
