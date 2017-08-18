@@ -13,4 +13,6 @@ class GastosTableViewCell: UITableViewCell {
     @IBOutlet weak var nomeGasto: UILabel!
     @IBOutlet weak var nomeValor: UILabel!
     @IBOutlet weak var categoria: UILabel!
+    @IBOutlet weak var imgCat: UIImageView!
+    
 }

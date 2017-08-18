@@ -12,7 +12,6 @@
 		3F9A97A21F44950C0061D38A /* Gasto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A97A11F44950C0061D38A /* Gasto.swift */; };
 		3F9A97A41F4495140061D38A /* AdicionarGastosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A97A31F4495140061D38A /* AdicionarGastosViewController.swift */; };
 		3FB474501F45DF3300895F47 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB4744F1F45DF3300895F47 /* PerfilViewController.swift */; };
-		3FB474521F45DFFC00895F47 /* PerfilTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB474511F45DFFC00895F47 /* PerfilTableViewCell.swift */; };
 		741907EB1F3E42BD00E5BCF4 /* MissoesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741907EA1F3E42BD00E5BCF4 /* MissoesTableViewCell.swift */; };
 		7471FC971F422180003671FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7471FC961F422180003671FE /* Assets.xcassets */; };
 		7471FC991F422CFB003671FE /* AdicionarMissoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7471FC981F422CFB003671FE /* AdicionarMissoesViewController.swift */; };
@@ -44,7 +43,6 @@
 		3F9A97A11F44950C0061D38A /* Gasto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gasto.swift; sourceTree = "<group>"; };
 		3F9A97A31F4495140061D38A /* AdicionarGastosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdicionarGastosViewController.swift; sourceTree = "<group>"; };
 		3FB4744F1F45DF3300895F47 /* PerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
-		3FB474511F45DFFC00895F47 /* PerfilTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerfilTableViewCell.swift; sourceTree = "<group>"; };
 		741907EA1F3E42BD00E5BCF4 /* MissoesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissoesTableViewCell.swift; sourceTree = "<group>"; };
 		7471FC961F422180003671FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7471FC981F422CFB003671FE /* AdicionarMissoesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdicionarMissoesViewController.swift; sourceTree = "<group>"; };
@@ -179,7 +177,6 @@
 			isa = PBXGroup;
 			children = (
 				3FB4744F1F45DF3300895F47 /* PerfilViewController.swift */,
-				3FB474511F45DFFC00895F47 /* PerfilTableViewCell.swift */,
 			);
 			name = Perfil;
 			sourceTree = "<group>";
@@ -393,7 +390,6 @@
 				3F9A97A01F4495060061D38A /* GastosViewController.swift in Sources */,
 				74A6D1D71F4565D40039F97F /* Rank.swift in Sources */,
 				741907EB1F3E42BD00E5BCF4 /* MissoesTableViewCell.swift in Sources */,
-				3FB474521F45DFFC00895F47 /* PerfilTableViewCell.swift in Sources */,
 				74F1411B1F3CDBAB0092C069 /* Gamic.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

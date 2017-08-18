@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "addgasto.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "trofeu-lari.png",
       "scale" : "2x"
     },
     {

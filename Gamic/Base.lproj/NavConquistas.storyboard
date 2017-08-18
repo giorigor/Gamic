@@ -43,21 +43,22 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue-background" translatesAutoresizingMaskIntoConstraints="NO" id="Yic-dF-qAN">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JmW-IB-mJx">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JmW-IB-mJx">
                                 <rect key="frame" x="17" y="292" width="343" height="264"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="conquistasIdentifier" rowHeight="44" id="PfJ-Tb-gyo" customClass="ConquistasTableViewCell" customModule="Gamic" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <rect key="frame" x="0.0" y="55" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PfJ-Tb-gyo" id="skl-jy-uld">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="conquista" translatesAutoresizingMaskIntoConstraints="NO" id="3pV-eA-w46">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trofeu-lari" translatesAutoresizingMaskIntoConstraints="NO" id="3pV-eA-w46">
                                                     <rect key="frame" x="16" y="8" width="32" height="32"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="32" id="FVR-HE-KFq"/>
+                                                        <constraint firstAttribute="height" constant="32" id="WIE-NW-rnm"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idJ-1S-zdF">
@@ -83,7 +84,7 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="PIE-Kz-nGI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="perfil01-lari" translatesAutoresizingMaskIntoConstraints="NO" id="PIE-Kz-nGI">
                                 <rect key="frame" x="88" y="84" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="TgK-US-mrg"/>
@@ -148,8 +149,8 @@
     <resources>
         <image name="TrophyFilled" width="25" height="25"/>
         <image name="blue-background" width="600" height="402"/>
-        <image name="conquista" width="32" height="32"/>
-        <image name="pikachu" width="256" height="256"/>
+        <image name="perfil01-lari" width="233" height="233"/>
+        <image name="trofeu-lari" width="55" height="51"/>
         <image name="trophy" width="25" height="25"/>
     </resources>
 </document>

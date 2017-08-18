@@ -71,11 +71,29 @@ class GastosViewController: UIViewController, UITableViewDataSource, UITableView
     
     func exibirLinhaDoToggle(gastoCell: GastosTableViewCell, gasto: Gasto) {
         gastoCell.categoria.text = "\(gasto.nmCategoria)"
+        definirImagemDaCategoria(gastoCell: gastoCell, gasto: gasto)
         gastoCell.categoria.isHidden = false
+        gastoCell.imgCat.isHidden = false
     }
     
     func esconderLinhaDoToggle(gastoCell: GastosTableViewCell, gasto: Gasto) {
         gastoCell.categoria.isHidden = true
+        gastoCell.imgCat.isHidden = true
+    }
+    
+    func definirImagemDaCategoria(gastoCell: GastosTableViewCell, gasto: Gasto) {
+        switch gasto.nmCategoria {
+        case "Eletrônicos":
+            gastoCell.imgCat.image = UIImage(named: "cat-eletronicos-lari")
+        case "Transportes":
+            gastoCell.imgCat.image = UIImage(named: "cat-transporte-lari")
+        case "Entretenimento":
+            gastoCell.imgCat.image = UIImage(named: "cat-lazer-lari")
+        case "Diversos":
+            gastoCell.imgCat.image = UIImage(named: "diversos-lari")
+        default:
+            gastoCell.imgCat.image = UIImage(named: "diversos-lari")
+        }
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
@@ -112,13 +130,13 @@ class GastosViewController: UIViewController, UITableViewDataSource, UITableView
         if indexPath.row == linhaAtual {
             if celulaSelecionada == false {
                 celulaSelecionada = true
-                return 40
+                return 55
             } else {
                 celulaSelecionada = false
-                return 75
+                return 90
             }
         }
-        return 40
+        return 55
     }
     
     //Passando os dados para a tela "Adicionar Gastos"

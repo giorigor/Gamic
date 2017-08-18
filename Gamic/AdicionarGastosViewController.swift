@@ -16,7 +16,7 @@ class AdicionarGastosViewController: UIViewController, UIPickerViewDelegate , UI
     @IBOutlet weak var btnConfirmar: UIButton!
     
     var listaDeGastos = [Gasto]()
-    var pickOption = ["Categorias", "Eletrônicos", "Lanches", "Transportes", "Lazer", "Diversos"]
+    var pickOption = ["Categorias", "Eletrônicos", "Lanches", "Transportes", "Entretenimento", "Diversos"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

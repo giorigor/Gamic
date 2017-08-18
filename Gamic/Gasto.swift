@@ -25,9 +25,10 @@ class GastoDAO {
     var listaDeGastos = [Gasto]()
     
     init() {
-        listaDeGastos.append(Gasto(nmGasto: "Bike", vlrGasto: 450.00, nmCategoria: "Transportes"))
-        listaDeGastos.append(Gasto(nmGasto: "Celular", vlrGasto: 1000.00, nmCategoria: "Eletrônicos"))
-        listaDeGastos.append(Gasto(nmGasto: "Notebook", vlrGasto: 1500.00, nmCategoria: "Eletrônicos"))
+        listaDeGastos.append(Gasto(nmGasto: "Bicicleta Portátil", vlrGasto: 450.00, nmCategoria: "Transportes"))
+        listaDeGastos.append(Gasto(nmGasto: "iPhone S7 Plus Ultra", vlrGasto: 1000.00, nmCategoria: "Eletrônicos"))
+        listaDeGastos.append(Gasto(nmGasto: "Mac Book Air", vlrGasto: 1500.00, nmCategoria: "Eletrônicos"))
+        listaDeGastos.append(Gasto(nmGasto: "Game of Thrones", vlrGasto: 200.00, nmCategoria: "Entretenimento"))
     }
     
     func getListaDeGastos() -> [Gasto] {
