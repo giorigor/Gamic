@@ -65,6 +65,7 @@ class AdicionarGastosViewController: UIViewController, UIPickerViewDelegate , UI
     func retornarParaGastos() {
         let gastosViewController = self.navigationController?.viewControllers.first as! GastosViewController
         gastosViewController.gastos = listaDeGastos
+        gastosViewController.gastosTotais += Double(valorDoGasto.text!)!
         _ = navigationController?.popViewController(animated: true)
     }
     

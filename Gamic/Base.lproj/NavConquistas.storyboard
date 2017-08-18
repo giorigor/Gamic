@@ -84,7 +84,7 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="perfil01-lari" translatesAutoresizingMaskIntoConstraints="NO" id="PIE-Kz-nGI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boy-1" translatesAutoresizingMaskIntoConstraints="NO" id="PIE-Kz-nGI">
                                 <rect key="frame" x="88" y="84" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="TgK-US-mrg"/>
@@ -149,7 +149,7 @@
     <resources>
         <image name="TrophyFilled" width="25" height="25"/>
         <image name="blue-background" width="600" height="402"/>
-        <image name="perfil01-lari" width="233" height="233"/>
+        <image name="boy-1" width="512" height="512"/>
         <image name="trofeu-lari" width="55" height="51"/>
         <image name="trophy" width="25" height="25"/>
     </resources>

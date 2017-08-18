@@ -24,7 +24,14 @@ class Perfil {
 }
 
 class PerfilDAO {
-    static func getPerfil() -> Perfil {
-        return Perfil(nome: "Eric Ribeiro", nivel: 2, vlrSaldo: 440.00, exp: 6200)
+    
+    var perfil: Perfil
+    
+    init() {
+        perfil = Perfil(nome: "Eric Ribeiro", nivel: 2, vlrSaldo: 4000, exp: 6200)
+    }
+    
+    func getPerfil() -> Perfil {
+        return perfil
     }
 }

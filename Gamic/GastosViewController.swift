@@ -19,11 +19,12 @@ class GastosViewController: UIViewController, UITableViewDataSource, UITableView
     var gastosTotais: Double = 0.0
     var celulaSelecionada:Bool = false
     var linhaAtual = -1
+    var perfil = PerfilDAO()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         gastos = gastoDAO.getListaDeGastos()
-        saldoLabel.text = "Saldo: R$\(PerfilDAO.getPerfil().vlrSaldo)"
+        calcularGastoTotal()
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -31,8 +32,8 @@ class GastosViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         celulaSelecionada = false
-        calcularGastoTotal()
         gastosLabel.text = "Gastos: R$ \(gastosTotais)"
+        saldoLabel.text = "Saldo: R$\(perfil.getPerfil().vlrSaldo - gastosTotais)"
         recarregarTabela()
     }
     

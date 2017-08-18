@@ -16,14 +16,15 @@ class PerfilViewController: UIViewController {
     @IBOutlet weak var barraDeExp: UIProgressView!
     @IBOutlet weak var quantidadeDeExp: UILabel!
     
+    var perfil = PerfilDAO()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let perfil = PerfilDAO.getPerfil()
-        let exp = String(format: "%.0f", perfil.exp)
+        let exp = String(format: "%.0f", perfil.getPerfil().exp)
         let limiteDoNivel: Double = 10000
         let limiteDoNivelStr = String(format: "%.0f", limiteDoNivel)
-        nivel.text = "Nível \(perfil.nivel)"
-        barraDeExp.progress = Float(perfil.exp/limiteDoNivel)
+        nivel.text = "Nível \(perfil.getPerfil().nivel)"
+        barraDeExp.progress = Float(perfil.getPerfil().exp/limiteDoNivel)
         quantidadeDeExp.text = "\(exp)/\(limiteDoNivelStr)"
     }
     

@@ -205,7 +205,7 @@
         <!--AdicionarGastos-->
         <scene sceneID="Qmr-Vj-ve3">
             <objects>
-                <viewController storyboardIdentifier="UIViewController-Oie-1z-ak0" id="x9U-hg-vBC" userLabel="AdicionarGastos" customClass="AdicionarGastosViewController" customModule="Gamic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AdicionarGastos" useStoryboardIdentifierAsRestorationIdentifier="YES" id="x9U-hg-vBC" userLabel="AdicionarGastos" customClass="AdicionarGastosViewController" customModule="Gamic" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gNk-q7-yC2"/>
                         <viewControllerLayoutGuide type="bottom" id="gvJ-By-gX5"/>

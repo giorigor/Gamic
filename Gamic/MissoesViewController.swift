@@ -17,11 +17,12 @@ class MissoesViewController: UIViewController, UITableViewDataSource, UITableVie
     var missoes = [Missao]()
     var celulaSelecionada:Bool = false
     var linhaAtual = -1
+    var perfil = PerfilDAO()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         missoes = missaoDAO.getListaDeMissoes()
-        saldoLabel.text = "Saldo: R$\(PerfilDAO.getPerfil().vlrSaldo)"
+        saldoLabel.text = "Nível: \(perfil.getPerfil().nivel)"
         tableView.delegate = self
         tableView.dataSource = self
     }

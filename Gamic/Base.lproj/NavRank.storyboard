@@ -142,7 +142,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9XO-2K-bIy" userLabel="UserExp Stack View">
                                 <rect key="frame" x="33" y="522" width="309" height="79.5"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="perfil01-lari" translatesAutoresizingMaskIntoConstraints="NO" id="zIC-pq-Ud1">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boy-1" translatesAutoresizingMaskIntoConstraints="NO" id="zIC-pq-Ud1">
                                         <rect key="frame" x="138.5" y="0.0" width="32" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="g0p-ln-njR"/>
@@ -206,7 +206,7 @@
         <image name="Rank2" width="25" height="25"/>
         <image name="Rank2Filled" width="25" height="25"/>
         <image name="blue-background" width="600" height="402"/>
+        <image name="boy-1" width="512" height="512"/>
         <image name="man" width="512" height="512"/>
-        <image name="perfil01-lari" width="233" height="233"/>
     </resources>
 </document>
