@@ -40,20 +40,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue-background" translatesAutoresizingMaskIntoConstraints="NO" id="Yic-dF-qAN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue-background" translatesAutoresizingMaskIntoConstraints="NO" id="Yic-dF-qAN">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JmW-IB-mJx">
-                                <rect key="frame" x="17" y="292" width="343" height="263.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JmW-IB-mJx">
+                                <rect key="frame" x="17" y="292" width="343" height="264"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="conquistasIdentifier" rowHeight="44" id="PfJ-Tb-gyo" customClass="ConquistasTableViewCell" customModule="Gamic" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PfJ-Tb-gyo" id="skl-jy-uld">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="conquista" translatesAutoresizingMaskIntoConstraints="NO" id="3pV-eA-w46">
@@ -85,31 +83,30 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="PIE-Kz-nGI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="PIE-Kz-nGI">
                                 <rect key="frame" x="88" y="84" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="TgK-US-mrg"/>
                                     <constraint firstAttribute="width" constant="200" id="egl-tK-kzt"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="UQA-v4-OIO" userLabel="UserExp Stack View">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="UQA-v4-OIO" userLabel="UserExp Stack View">
                                 <rect key="frame" x="34" y="563" width="309" height="42.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" ambiguous="YES" text="Nível 99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYT-cU-T3e">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Nível 99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYT-cU-T3e">
                                         <rect key="frame" x="130.5" y="0.0" width="48" height="16.5"/>
                                         <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
                                         <color key="textColor" red="0.1844147632" green="0.27981357470000001" blue="0.22508905700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" verticalCompressionResistancePriority="751" ambiguous="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yrt-cs-K6u">
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" verticalCompressionResistancePriority="751" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yrt-cs-K6u">
                                         <rect key="frame" x="0.0" y="21.5" width="309" height="2"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="309" id="nk7-m2-N0E"/>
                                         </constraints>
                                     </progressView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="99999/99999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgL-zy-b3D">
-                                        <rect key="frame" x="122.5" y="28.5" width="64" height="14"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99999/99999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgL-zy-b3D">
+                                        <rect key="frame" x="123" y="28.5" width="63.5" height="14"/>
                                         <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="12"/>
                                         <color key="textColor" red="0.1844147632" green="0.27981357470000001" blue="0.22508905700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -118,6 +115,20 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Yic-dF-qAN" firstAttribute="bottom" secondItem="aR2-a3-Kpz" secondAttribute="bottom" id="6lj-t3-KHz"/>
+                            <constraint firstItem="JmW-IB-mJx" firstAttribute="leading" secondItem="Mv1-1T-R47" secondAttribute="leadingMargin" constant="1" id="J4e-7U-P7i"/>
+                            <constraint firstItem="JmW-IB-mJx" firstAttribute="centerX" secondItem="UQA-v4-OIO" secondAttribute="centerX" id="N9r-CO-45P"/>
+                            <constraint firstAttribute="trailing" secondItem="Yic-dF-qAN" secondAttribute="trailing" id="d0Z-ex-hDg"/>
+                            <constraint firstItem="UQA-v4-OIO" firstAttribute="top" secondItem="JmW-IB-mJx" secondAttribute="bottom" constant="7" id="lig-xW-8hz"/>
+                            <constraint firstItem="PIE-Kz-nGI" firstAttribute="top" secondItem="aR2-a3-Kpz" secondAttribute="bottom" constant="20" id="o3y-yF-WgN"/>
+                            <constraint firstItem="Yic-dF-qAN" firstAttribute="centerX" secondItem="PIE-Kz-nGI" secondAttribute="centerX" id="oAB-u8-lSb"/>
+                            <constraint firstItem="Yic-dF-qAN" firstAttribute="top" secondItem="Mv1-1T-R47" secondAttribute="top" id="or2-Re-SIL"/>
+                            <constraint firstItem="kXW-3v-bWG" firstAttribute="top" secondItem="UQA-v4-OIO" secondAttribute="bottom" constant="12" id="qzI-Ep-Jpr"/>
+                            <constraint firstItem="PIE-Kz-nGI" firstAttribute="centerX" secondItem="JmW-IB-mJx" secondAttribute="centerX" id="tTf-cf-UlZ"/>
+                            <constraint firstItem="Yic-dF-qAN" firstAttribute="leading" secondItem="Mv1-1T-R47" secondAttribute="leading" id="xfF-iO-MHC"/>
+                            <constraint firstItem="JmW-IB-mJx" firstAttribute="top" secondItem="PIE-Kz-nGI" secondAttribute="bottom" constant="8" symbolic="YES" id="zav-qW-z9b"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Conquistas" image="trophy" selectedImage="TrophyFilled" id="n02-CV-Gcg"/>
                     <navigationItem key="navigationItem" title="Conquistas" id="JDA-80-g1s"/>

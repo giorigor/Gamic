@@ -120,13 +120,13 @@ class MissoesViewController: UIViewController, UITableViewDataSource, UITableVie
         if indexPath.row == linhaAtual {
             if celulaSelecionada == false {
                 celulaSelecionada = true
-                return 40
+                return 55
             } else {
                 celulaSelecionada = false
-                return 75
+                return 90
             }
         }
-        return 40
+        return 55
     }
     
     //Passando os dados para a tela "Adicionar Missões"

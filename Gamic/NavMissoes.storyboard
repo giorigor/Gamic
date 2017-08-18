@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -41,14 +40,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue-background" translatesAutoresizingMaskIntoConstraints="NO" id="tHT-75-WEN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="XZ2-xR-2G3" userLabel="Content Stack View">
                                 <rect key="frame" x="16" y="79" width="343" height="539"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pHX-3F-3na" userLabel="Upper Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="170"/>
+                                        <rect key="frame" x="101.5" y="0.0" width="140" height="170"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ew-PE-myC">
-                                                <rect key="frame" x="101.5" y="0.0" width="140" height="140"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="140" id="gbc-Qy-uLq"/>
                                                     <constraint firstAttribute="height" constant="140" id="vr1-tI-tWj"/>
@@ -61,142 +63,121 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMY-Z8-JKg" userLabel="Saldo">
-                                                <rect key="frame" x="153.5" y="150" width="36" height="20"/>
+                                                <rect key="frame" x="52" y="150" width="36" height="20"/>
                                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="78" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Opx-1K-OeA">
+                                    <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="96" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Opx-1K-OeA">
                                         <rect key="frame" x="0.0" y="195" width="343" height="344"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" selectionStyle="default" indentationWidth="10" reuseIdentifier="missaoIdentifier" rowHeight="78" id="wWH-HP-ir2" customClass="MissoesTableViewCell" customModule="Gamic" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="343" height="78"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" selectionStyle="default" indentationWidth="10" reuseIdentifier="missaoIdentifier" rowHeight="96" id="wWH-HP-ir2" customClass="MissoesTableViewCell" customModule="Gamic" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="343" height="96"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wWH-HP-ir2" id="Qyp-Cr-KfE">
-                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="77"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="95"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="top" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="d58-gD-zaQ">
-                                                            <rect key="frame" x="8" y="8" width="327" height="65"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l5d-AJ-WG7" userLabel="Missão Stack">
+                                                            <rect key="frame" x="23" y="8" width="185" height="45"/>
                                                             <subviews>
-                                                                <stackView opaque="NO" contentMode="center" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cNn-Fd-dNa" userLabel="Upper Stack View">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="327" height="30"/>
-                                                                    <subviews>
-                                                                        <stackView opaque="NO" contentMode="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7be-Ei-0RS" userLabel="Missao Label">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="210" height="25"/>
-                                                                            <subviews>
-                                                                                <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageView:bHF-Bn-hKB:image" translatesAutoresizingMaskIntoConstraints="NO" id="bHF-Bn-hKB">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
-                                                                                    <constraints>
-                                                                                        <constraint firstAttribute="height" constant="25" id="DAu-OJ-oJi"/>
-                                                                                        <constraint firstAttribute="width" constant="25" id="ERj-hd-2h6"/>
-                                                                                    </constraints>
-                                                                                </imageView>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SzD-8X-lsL" userLabel="Missao">
-                                                                                    <rect key="frame" x="30" y="0.0" width="180" height="25"/>
-                                                                                    <constraints>
-                                                                                        <constraint firstAttribute="width" constant="180" id="gF3-bB-e0v"/>
-                                                                                    </constraints>
-                                                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
-                                                                                    <nil key="textColor"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                            </subviews>
-                                                                        </stackView>
-                                                                        <stackView opaque="NO" contentMode="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qDb-ck-VUg" userLabel="Preco Label">
-                                                                            <rect key="frame" x="220" y="0.0" width="107" height="25"/>
-                                                                            <subviews>
-                                                                                <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coin-stack" translatesAutoresizingMaskIntoConstraints="NO" id="JBJ-u9-Y5w">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
-                                                                                    <constraints>
-                                                                                        <constraint firstAttribute="width" constant="25" id="VEx-ji-AJh"/>
-                                                                                        <constraint firstAttribute="height" constant="25" id="g44-7X-XNn"/>
-                                                                                    </constraints>
-                                                                                </imageView>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpc-wj-WkN" userLabel="Preco">
-                                                                                    <rect key="frame" x="30" y="0.0" width="77" height="25"/>
-                                                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
-                                                                                    <nil key="textColor"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                            </subviews>
-                                                                        </stackView>
-                                                                    </subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diversos-lari" translatesAutoresizingMaskIntoConstraints="NO" id="lrj-3A-V8X">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" constant="30" id="wHL-la-sf9"/>
+                                                                        <constraint firstAttribute="width" constant="45" id="1EN-Zr-95g"/>
+                                                                        <constraint firstAttribute="height" constant="45" id="fKg-Fw-vrw"/>
                                                                     </constraints>
-                                                                </stackView>
-                                                                <stackView opaque="NO" contentMode="scaleAspectFit" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VXz-Hn-W9T" userLabel="Bottom Stack View">
-                                                                    <rect key="frame" x="45.5" y="30" width="236.5" height="35"/>
-                                                                    <subviews>
-                                                                        <stackView opaque="NO" contentMode="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="u6h-2V-0BL" userLabel="Missao Label">
-                                                                            <rect key="frame" x="0.0" y="5.5" width="146" height="24"/>
-                                                                            <subviews>
-                                                                                <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="piggy-bank" translatesAutoresizingMaskIntoConstraints="NO" id="1YH-Vu-act">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="25" height="24"/>
-                                                                                    <constraints>
-                                                                                        <constraint firstAttribute="height" constant="25" id="8TR-SC-OBO"/>
-                                                                                        <constraint firstAttribute="width" constant="25" id="CIb-bm-C39"/>
-                                                                                    </constraints>
-                                                                                </imageView>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$100.00 p/ Dia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qr9-lz-KHi" userLabel="Quantidade Por Dia">
-                                                                                    <rect key="frame" x="31" y="0.0" width="115" height="24"/>
-                                                                                    <constraints>
-                                                                                        <constraint firstAttribute="width" constant="115" id="lba-39-r4m"/>
-                                                                                    </constraints>
-                                                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
-                                                                                    <nil key="textColor"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                            </subviews>
-                                                                        </stackView>
-                                                                        <stackView opaque="NO" contentMode="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cwg-NX-Uwr" userLabel="Preco Label">
-                                                                            <rect key="frame" x="146" y="5" width="90.5" height="25"/>
-                                                                            <subviews>
-                                                                                <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="small-calendar" translatesAutoresizingMaskIntoConstraints="NO" id="OrB-Pc-MN4">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
-                                                                                    <constraints>
-                                                                                        <constraint firstAttribute="height" constant="25" id="d3E-RW-cWu"/>
-                                                                                        <constraint firstAttribute="width" constant="25" id="fkG-G9-Nxt"/>
-                                                                                    </constraints>
-                                                                                </imageView>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="365 Dias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qxf-ES-pPA" userLabel="Quatidade De Dias">
-                                                                                    <rect key="frame" x="30" y="0.0" width="60.5" height="25"/>
-                                                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
-                                                                                    <nil key="textColor"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                            </subviews>
-                                                                        </stackView>
-                                                                    </subviews>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Livros do Harry Potter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKk-m5-hHJ">
+                                                                    <rect key="frame" x="45" y="0.0" width="140" height="45"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" constant="35" id="EKy-o6-eJv"/>
+                                                                        <constraint firstAttribute="width" constant="140" id="nZq-Hq-icv"/>
                                                                     </constraints>
-                                                                </stackView>
+                                                                    <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="14"/>
+                                                                    <color key="textColor" red="0.33333333329999998" green="0.50588235290000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
                                                             </subviews>
-                                                            <constraints>
-                                                                <constraint firstAttribute="trailingMargin" secondItem="cNn-Fd-dNa" secondAttribute="trailing" id="Pdk-A5-9Z6"/>
-                                                                <constraint firstItem="cNn-Fd-dNa" firstAttribute="leading" secondItem="d58-gD-zaQ" secondAttribute="leadingMargin" id="wOY-qZ-tvM"/>
-                                                            </constraints>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yXD-vX-vOF" userLabel="Preço Stack">
+                                                            <rect key="frame" x="220" y="8" width="109.5" height="45"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moedas-lari" translatesAutoresizingMaskIntoConstraints="NO" id="9Vn-9T-afV">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="45" id="Uwn-fi-j7N"/>
+                                                                        <constraint firstAttribute="height" constant="45" id="kvN-uV-cqm"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$9999.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSY-Sj-NcE">
+                                                                    <rect key="frame" x="45" y="0.0" width="64.5" height="45"/>
+                                                                    <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="14"/>
+                                                                    <color key="textColor" red="0.33333333329999998" green="0.50588235290000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R6O-iS-aRW" userLabel="Dias Stack">
+                                                            <rect key="frame" x="195" y="47" width="98" height="45"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendario-lari" translatesAutoresizingMaskIntoConstraints="NO" id="Mq7-bD-TE5">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="45" id="a8W-15-egX"/>
+                                                                        <constraint firstAttribute="width" constant="45" id="u2C-nm-Nms"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="180 Dias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7n-my-qkF">
+                                                                    <rect key="frame" x="45" y="0.0" width="53" height="45"/>
+                                                                    <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="14"/>
+                                                                    <color key="textColor" red="0.33333333329999998" green="0.50588235290000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UCq-45-At0" userLabel="Economia Stack">
+                                                            <rect key="frame" x="55" y="47" width="139" height="45"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="porco-lari" translatesAutoresizingMaskIntoConstraints="NO" id="ZKu-if-Aws">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="45" id="BTC-wD-nvU"/>
+                                                                        <constraint firstAttribute="height" constant="45" id="noj-Zz-Lvw"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$10000 p/ Dia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEw-kh-aff">
+                                                                    <rect key="frame" x="45" y="0.0" width="94" height="45"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="94" id="jLS-YF-oTw"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="14"/>
+                                                                    <color key="textColor" red="0.33333333329999998" green="0.50588235290000005" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
                                                         </stackView>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstItem="d58-gD-zaQ" firstAttribute="leading" secondItem="Qyp-Cr-KfE" secondAttribute="leadingMargin" id="5nJ-6M-jd4"/>
-                                                        <constraint firstAttribute="bottomMargin" secondItem="d58-gD-zaQ" secondAttribute="baseline" id="pnM-Gi-4YS"/>
-                                                        <constraint firstItem="d58-gD-zaQ" firstAttribute="top" secondItem="Qyp-Cr-KfE" secondAttribute="topMargin" id="tiZ-LI-qDB"/>
-                                                        <constraint firstAttribute="trailingMargin" secondItem="d58-gD-zaQ" secondAttribute="trailing" id="ve8-GT-GPb"/>
+                                                        <constraint firstItem="l5d-AJ-WG7" firstAttribute="top" secondItem="yXD-vX-vOF" secondAttribute="top" id="9FB-Kp-zHL"/>
+                                                        <constraint firstItem="UCq-45-At0" firstAttribute="top" secondItem="Qyp-Cr-KfE" secondAttribute="topMargin" constant="39" id="TAs-Rt-umL"/>
+                                                        <constraint firstItem="UCq-45-At0" firstAttribute="top" secondItem="R6O-iS-aRW" secondAttribute="top" id="V6T-jq-JmQ"/>
+                                                        <constraint firstItem="l5d-AJ-WG7" firstAttribute="top" secondItem="Qyp-Cr-KfE" secondAttribute="topMargin" id="XT8-ir-hEc"/>
+                                                        <constraint firstItem="l5d-AJ-WG7" firstAttribute="leading" secondItem="Qyp-Cr-KfE" secondAttribute="leadingMargin" constant="15" id="ZHR-gs-X9n"/>
+                                                        <constraint firstItem="R6O-iS-aRW" firstAttribute="leading" secondItem="UCq-45-At0" secondAttribute="trailing" constant="1" id="krT-A3-fRy"/>
+                                                        <constraint firstItem="yXD-vX-vOF" firstAttribute="leading" secondItem="l5d-AJ-WG7" secondAttribute="trailing" constant="12" id="upq-N4-TRA"/>
+                                                        <constraint firstItem="UCq-45-At0" firstAttribute="leading" secondItem="Qyp-Cr-KfE" secondAttribute="leadingMargin" constant="47" id="wDh-9g-an5"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
-                                                    <outlet property="imgQuantidadeDeDias" destination="OrB-Pc-MN4" id="hbq-wL-Xhq"/>
-                                                    <outlet property="imgQuatidadePorDia" destination="1YH-Vu-act" id="iIq-6u-3Ii"/>
-                                                    <outlet property="nomeDaMissao" destination="SzD-8X-lsL" id="IcE-ZX-Nog"/>
-                                                    <outlet property="quantidadeDeDias" destination="Qxf-ES-pPA" id="5IR-gu-2MK"/>
-                                                    <outlet property="quantidadePorDia" destination="qr9-lz-KHi" id="fTj-bV-6wD"/>
-                                                    <outlet property="valorDaMissao" destination="Bpc-wj-WkN" id="Qfp-hQ-4mw"/>
+                                                    <outlet property="imgQuantidadeDeDias" destination="Mq7-bD-TE5" id="mqg-k4-e3G"/>
+                                                    <outlet property="imgQuatidadePorDia" destination="ZKu-if-Aws" id="wOd-Ra-jdG"/>
+                                                    <outlet property="nomeDaMissao" destination="iKk-m5-hHJ" id="wcw-Az-LLD"/>
+                                                    <outlet property="quantidadeDeDias" destination="p7n-my-qkF" id="m75-5j-CCN"/>
+                                                    <outlet property="quantidadePorDia" destination="qEw-kh-aff" id="Q1G-oH-7VX"/>
+                                                    <outlet property="valorDaMissao" destination="NSY-Sj-NcE" id="JYY-Vs-w2s"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -204,25 +185,20 @@
                                     </tableView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="pHX-3F-3na" firstAttribute="leading" secondItem="XZ2-xR-2G3" secondAttribute="leading" id="Cq1-8Y-ovK"/>
-                                    <constraint firstItem="pHX-3F-3na" firstAttribute="top" secondItem="XZ2-xR-2G3" secondAttribute="top" id="HOR-vb-4Sy"/>
-                                    <constraint firstAttribute="bottom" secondItem="Opx-1K-OeA" secondAttribute="bottom" id="PWq-Ip-52k"/>
-                                    <constraint firstAttribute="trailing" secondItem="pHX-3F-3na" secondAttribute="trailing" id="ULj-Ze-iUw"/>
-                                    <constraint firstItem="Opx-1K-OeA" firstAttribute="leading" secondItem="XZ2-xR-2G3" secondAttribute="leading" id="VRt-7N-Ltd"/>
-                                    <constraint firstAttribute="trailing" secondItem="Opx-1K-OeA" secondAttribute="trailing" id="e6j-QW-F3C"/>
+                                    <constraint firstItem="Opx-1K-OeA" firstAttribute="leading" secondItem="XZ2-xR-2G3" secondAttribute="leading" id="SL6-Al-CZp"/>
                                 </constraints>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue-background" translatesAutoresizingMaskIntoConstraints="NO" id="tHT-75-WEN">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="XZ2-xR-2G3" secondAttribute="trailing" id="5fb-Uy-kZC"/>
-                            <constraint firstItem="XZ2-xR-2G3" firstAttribute="top" secondItem="Yan-jg-MD5" secondAttribute="bottom" constant="15" id="ODD-5q-5eq"/>
-                            <constraint firstItem="F23-24-R9j" firstAttribute="top" secondItem="XZ2-xR-2G3" secondAttribute="bottom" id="bsK-gF-GFq"/>
-                            <constraint firstItem="XZ2-xR-2G3" firstAttribute="leading" secondItem="tWd-8n-7ag" secondAttribute="leadingMargin" id="hCG-LX-pqC"/>
+                            <constraint firstItem="XZ2-xR-2G3" firstAttribute="top" secondItem="Yan-jg-MD5" secondAttribute="bottom" constant="15" id="13W-HP-cXA"/>
+                            <constraint firstItem="tHT-75-WEN" firstAttribute="leading" secondItem="tWd-8n-7ag" secondAttribute="leading" id="1AE-dQ-bOT"/>
+                            <constraint firstAttribute="trailing" secondItem="tHT-75-WEN" secondAttribute="trailing" id="Oxs-Zv-ge6"/>
+                            <constraint firstItem="tHT-75-WEN" firstAttribute="bottom" secondItem="Yan-jg-MD5" secondAttribute="bottom" id="f4C-L4-1eJ"/>
+                            <constraint firstItem="XZ2-xR-2G3" firstAttribute="bottom" secondItem="F23-24-R9j" secondAttribute="top" id="kaw-8j-Kbv"/>
+                            <constraint firstItem="tHT-75-WEN" firstAttribute="centerX" secondItem="XZ2-xR-2G3" secondAttribute="centerX" id="nxj-9t-pLW"/>
+                            <constraint firstItem="XZ2-xR-2G3" firstAttribute="leading" secondItem="tWd-8n-7ag" secondAttribute="leadingMargin" id="pnh-Q4-y0p"/>
+                            <constraint firstItem="tHT-75-WEN" firstAttribute="top" secondItem="tWd-8n-7ag" secondAttribute="top" id="su3-O6-vI8"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" tag="1" title="Missões" image="Goal" selectedImage="GoalFilled" id="mgn-Cp-Bn4"/>
@@ -344,100 +320,11 @@
         <image name="GoalFilled" width="25" height="25"/>
         <image name="adicionar-missoes" width="256" height="256"/>
         <image name="blue-background" width="600" height="402"/>
-        <image name="coin-stack" width="24" height="24"/>
+        <image name="calendario-lari" width="111" height="102"/>
         <image name="confirmar" width="64" height="64"/>
-        <image name="imageView:bHF-Bn-hKB:image" width="24" height="24">
-            <mutableData key="keyedArchiveRepresentation">
-YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
-GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
-c1dOU0NvbG9ygAKADRIgwAAAgAOAC1h7MjQsIDI0fdIVChYYWk5TLm9iamVjdHOhF4AEgArSFQoaHaIb
-HIAFgAaACRAA0iAKISJfEBROU1RJRkZSZXByZXNlbnRhdGlvboAHgAhPERGeTU0AKgAACQgAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABYUhNswLUs7H12HJoAAAAAAAAA
-AA0MAxB9dhyalo0huJaNIbiWjSG4lo0huJaNIbiWjSG4lo0huJaNIbiWjSG4lo0huJaNIbiWjSG4lo0h
-uJaNIbiWjSG4lIwhtkpHEVy6sCrl0MQv/9DEL/8XFQUdAAAAAEVCD1bQxC//0MQv/9DEL//QxC//0MQv
-/9DEL//QxC//0MQv/9DEL//QxC//0MQv/9DEL//QxC//0MQv/9DEL//QxC//0MQv/7uwKuZwahqLz8Mu
-/p2SIsEAAAAAAAAAAAsKAg53cBqSj4cfsI+HH7CPhx+wj4cfsI+HH7CPhx+wj4cfsI+HH7CPhx+wj4cf
-sI+HH7CPhx+wj4cfsI+HH7CPhx+wjYUgrkVCD1YAAAAAERADFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZGAYgZV8W
-fCwpCjYAAAAAAAAAAAAAAAATEQMXJyQIMCckCDAnJAgwJyQIMCckCDAnJAgwJyQIMCckCDAnJAgwJyQI
-MCckCDAnJAgwJyQIMCckCDAnJAgwJSMILgIBAAOknCbK0MQv/8a6LPMLCgIOAAAAAC4sCjnMwC770MQv
-/9DEL//QxC//0MQv/9DEL//QxC//0MQv/9DEL//QxC//0MQv/9DEL//QxC//0MQv/9DEL//QxC//0MQv
-/6CYJMWknCbK0MQv/8a6LPMLCgIOAAAAAC4sCjnMwC770MQv/9DEL//QxC//0MQv/9DEL//QxC//0MQv
-/9DEL//QxC//0MQv/9DEL//QxC//0MQv/9DEL//QxC//0MQv/6CYJMUZGAYgZV8WfCwpCjYAAAAAAAAA
-AAAAAAATEQMXJyQIMCckCDAnJAgwJyQIMCckCDAnJAgwJyQIMCckCDAnJAgwJyQIMCckCDAnJAgwJyQI
-MCckCDAnJAgwJSMILgIBAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAERADFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwahqLz8Mu/p2SIsEAAAAAAAAA
-AAsKAg53cBqSj4cfsI+HH7CPhx+wj4cfsI+HH7CPhx+wj4cfsI+HH7CPhx+wj4cfsI+HH7CPhx+wj4cf
-sI+HH7CPhx+wjYUgrkVCD1a6sCrl0MQv/9DEL/8XFQUdAAAAAEVCD1bQxC//0MQv/9DEL//QxC//0MQv
-/9DEL//QxC//0MQv/9DEL//QxC//0MQv/9DEL//QxC//0MQv/9DEL//QxC//0MQv/7uwKuZYUhNswLUs
-7H12HJoAAAAAAAAAAA0MAxB9dhyalo0huJaNIbiWjSG4lo0huJaNIbiWjSG4lo0huJaNIbiWjSG4lo0h
-uJaNIbiWjSG4lo0huJaNIbiWjSG4lIwhtkpHEVwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAADgEAAAMAAAABABgAAAEBAAMAAAABABgAAAECAAMAAAAEAAAJtgEDAAMA
-AAABAAEAAAEGAAMAAAABAAIAAAERAAQAAAABAAAACAESAAMAAAABAAEAAAEVAAMAAAABAAQAAAEWAAMA
-AAABABgAAAEXAAQAAAABAAAJAAEcAAMAAAABAAEAAAFSAAMAAAABAAEAAAFTAAMAAAAEAAAJvodzAAcA
-AAfYAAAJxgAAAAAACAAIAAgACAABAAEAAQABAAAH2GFwcGwCIAAAbW50clJHQiBYWVogB9kAAgAZAAsA
-GgALYWNzcEFQUEwAAAAAYXBwbAAAAAAAAAAAAAAAAAAAAAAAAPbWAAEAAAAA0y1hcHBsAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALZGVzYwAAAQgAAABvZHNjbQAAAXgA
-AAWcY3BydAAABxQAAAA4d3RwdAAAB0wAAAAUclhZWgAAB2AAAAAUZ1hZWgAAB3QAAAAUYlhZWgAAB4gA
-AAAUclRSQwAAB5wAAAAOY2hhZAAAB6wAAAAsYlRSQwAAB5wAAAAOZ1RSQwAAB5wAAAAOZGVzYwAAAAAA
-AAAUR2VuZXJpYyBSR0IgUHJvZmlsZQAAAAAAAAAAAAAAFEdlbmVyaWMgUkdCIFByb2ZpbGUAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG1sdWMAAAAAAAAAHwAAAAxz
-a1NLAAAAKAAAAYRkYURLAAAALgAAAaxjYUVTAAAAJAAAAdp2aVZOAAAAJAAAAf5wdEJSAAAAJgAAAiJ1
-a1VBAAAAKgAAAkhmckZVAAAAKAAAAnJodUhVAAAAKAAAApp6aFRXAAAAFgAAAsJuYk5PAAAAJgAAAthj
-c0NaAAAAIgAAAv5oZUlMAAAAHgAAAyBpdElUAAAAKAAAAz5yb1JPAAAAJAAAA2ZkZURFAAAALAAAA4pr
-b0tSAAAAFgAAA7ZzdlNFAAAAJgAAAth6aENOAAAAFgAAA8xqYUpQAAAAGgAAA+JlbEdSAAAAIgAAA/xw
-dFBPAAAAJgAABB5ubE5MAAAAKAAABERlc0VTAAAAJgAABB50aFRIAAAAJAAABGx0clRSAAAAIgAABJBm
-aUZJAAAAKAAABLJockhSAAAAKAAABNpwbFBMAAAALAAABQJydVJVAAAAIgAABS5hckVHAAAAJgAABVBl
-blVTAAAAJgAABXYAVgFhAGUAbwBiAGUAYwBuAP0AIABSAEcAQgAgAHAAcgBvAGYAaQBsAEcAZQBuAGUA
-cgBlAGwAIABSAEcAQgAtAGIAZQBzAGsAcgBpAHYAZQBsAHMAZQBQAGUAcgBmAGkAbAAgAFIARwBCACAA
-ZwBlAG4A6AByAGkAYwBDHqUAdQAgAGgA7ABuAGgAIABSAEcAQgAgAEMAaAB1AG4AZwBQAGUAcgBmAGkA
-bAAgAFIARwBCACAARwBlAG4A6QByAGkAYwBvBBcEMAQzBDAEOwRMBD0EOAQ5ACAEPwRABD4ERAQwBDkE
-OwAgAFIARwBCAFAAcgBvAGYAaQBsACAAZwDpAG4A6QByAGkAcQB1AGUAIABSAFYAQgDBAGwAdABhAGwA
-4QBuAG8AcwAgAFIARwBCACAAcAByAG8AZgBpAGyQGnUoACAAUgBHAEIAIIJyX2ljz4/wAEcAZQBuAGUA
-cgBpAHMAawAgAFIARwBCAC0AcAByAG8AZgBpAGwATwBiAGUAYwBuAP0AIABSAEcAQgAgAHAAcgBvAGYA
-aQBsBeQF6AXVBeQF2QXcACAAUgBHAEIAIAXbBdwF3AXZAFAAcgBvAGYAaQBsAG8AIABSAEcAQgAgAGcA
-ZQBuAGUAcgBpAGMAbwBQAHIAbwBmAGkAbAAgAFIARwBCACAAZwBlAG4AZQByAGkAYwBBAGwAbABnAGUA
-bQBlAGkAbgBlAHMAIABSAEcAQgAtAFAAcgBvAGYAaQBsx3y8GAAgAFIARwBCACDVBLhc0wzHfGZukBoA
-IABSAEcAQgAgY8+P8GWHTvZOAIIsACAAUgBHAEIAIDDXMO0w1TChMKQw6wOTA7UDvQO5A7oDzAAgA8AD
-wQO/A8YDrwO7ACAAUgBHAEIAUABlAHIAZgBpAGwAIABSAEcAQgAgAGcAZQBuAOkAcgBpAGMAbwBBAGwA
-ZwBlAG0AZQBlAG4AIABSAEcAQgAtAHAAcgBvAGYAaQBlAGwOQg4bDiMORA4fDiUOTAAgAFIARwBCACAO
-Fw4xDkgOJw5EDhsARwBlAG4AZQBsACAAUgBHAEIAIABQAHIAbwBmAGkAbABpAFkAbABlAGkAbgBlAG4A
-IABSAEcAQgAtAHAAcgBvAGYAaQBpAGwAaQBHAGUAbgBlAHIAaQENAGsAaQAgAFIARwBCACAAcAByAG8A
-ZgBpAGwAVQBuAGkAdwBlAHIAcwBhAGwAbgB5ACAAcAByAG8AZgBpAGwAIABSAEcAQgQeBDEESQQ4BDkA
-IAQ/BEAEPgREBDgEOwRMACAAUgBHAEIGRQZEBkEAIAYqBjkGMQZKBkEAIABSAEcAQgAgBicGRAY5BicG
-RQBHAGUAbgBlAHIAaQBjACAAUgBHAEIAIABQAHIAbwBmAGkAbABldGV4dAAAAABDb3B5cmlnaHQgMjAw
-NyBBcHBsZSBJbmMuLCBhbGwgcmlnaHRzIHJlc2VydmVkLgBYWVogAAAAAAAA81IAAQAAAAEWz1hZWiAA
-AAAAAAB0TQAAPe4AAAPQWFlaIAAAAAAAAFp1AACscwAAFzRYWVogAAAAAAAAKBoAABWfAAC4NmN1cnYA
-AAAAAAAAAQHNAABzZjMyAAAAAAABDEIAAAXe///zJgAAB5IAAP2R///7ov///aMAAAPcAADAbNIlJico
-WiRjbGFzc25hbWVYJGNsYXNzZXNfEBBOU0JpdG1hcEltYWdlUmVwoycpKlpOU0ltYWdlUmVwWE5TT2Jq
-ZWN00iUmLC1XTlNBcnJheaIsKtIlJi8wXk5TTXV0YWJsZUFycmF5oy8sKtMyMwo0NTZXTlNXaGl0ZVxO
-U0NvbG9yU3BhY2VEMCAwABADgAzSJSY4OVdOU0NvbG9yojgq0iUmOzxXTlNJbWFnZaI7Kl8QD05TS2V5
-ZWRBcmNoaXZlctE/QFRyb290gAEACAARABoAIwAtADIANwBGAEwAVwBeAGUAcgB5AIEAgwCFAIoAjACO
-AJcAnACnAKkAqwCtALIAtQC3ALkAuwC9AMIA2QDbAN0SfxKEEo8SmBKrEq8SuhLDEsgS0BLTEtgS5xLr
-EvIS+hMHEwwTDhMQExUTHRMgEyUTLRMwE0ITRRNKAAAAAAAAAgEAAAAAAAAAQQAAAAAAAAAAAAAAAAAA
-E0w
-</mutableData>
-        </image>
-        <image name="piggy-bank" width="24" height="24"/>
+        <image name="diversos-lari" width="111" height="102"/>
+        <image name="moedas-lari" width="111" height="102"/>
         <image name="plus" width="256" height="256"/>
-        <image name="small-calendar" width="24" height="24"/>
+        <image name="porco-lari" width="55" height="51"/>
     </resources>
 </document>
