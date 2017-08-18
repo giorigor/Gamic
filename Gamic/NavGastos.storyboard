@@ -119,12 +119,12 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="TI5-KD-h6m" firstAttribute="leading" secondItem="jlu-HC-zeC" secondAttribute="leadingMargin" constant="97" id="1nz-7m-hOp"/>
-                                                <constraint firstItem="8Xx-bE-0lb" firstAttribute="top" secondItem="jlu-HC-zeC" secondAttribute="topMargin" id="8BL-MO-JkE"/>
-                                                <constraint firstItem="TI5-KD-h6m" firstAttribute="top" secondItem="jlu-HC-zeC" secondAttribute="topMargin" constant="34" id="BK4-20-CRq"/>
-                                                <constraint firstItem="8Xx-bE-0lb" firstAttribute="top" secondItem="AEf-eA-PDB" secondAttribute="top" id="dmO-2N-8tf"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="AEf-eA-PDB" secondAttribute="trailing" constant="-1" id="dyx-Iu-LmA"/>
-                                                <constraint firstItem="8Xx-bE-0lb" firstAttribute="leading" secondItem="jlu-HC-zeC" secondAttribute="leadingMargin" constant="16" id="pe6-3v-1Gs"/>
+                                                <constraint firstItem="TI5-KD-h6m" firstAttribute="top" secondItem="jlu-HC-zeC" secondAttribute="topMargin" constant="34" id="Clf-ck-B1P"/>
+                                                <constraint firstItem="8Xx-bE-0lb" firstAttribute="top" secondItem="jlu-HC-zeC" secondAttribute="topMargin" id="PMp-re-ipL"/>
+                                                <constraint firstItem="TI5-KD-h6m" firstAttribute="leading" secondItem="jlu-HC-zeC" secondAttribute="leadingMargin" constant="97" id="QeF-Zp-StR"/>
+                                                <constraint firstItem="8Xx-bE-0lb" firstAttribute="leading" secondItem="jlu-HC-zeC" secondAttribute="leadingMargin" constant="16" id="szj-Dv-VcA"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="AEf-eA-PDB" secondAttribute="trailing" constant="-1" id="wJT-Rx-WCw"/>
+                                                <constraint firstItem="8Xx-bE-0lb" firstAttribute="top" secondItem="AEf-eA-PDB" secondAttribute="top" id="wva-X5-JZn"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -147,10 +147,20 @@
                                     <segue destination="x9U-hg-vBC" kind="show" id="C9G-Ra-jHg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZ8-PM-non">
-                                <rect key="frame" x="106" y="229" width="162" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saldo R$99999.99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZ8-PM-non">
+                                <rect key="frame" x="137" y="247" width="101" height="21"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="101" id="U3W-xX-jTI"/>
                                     <constraint firstAttribute="height" constant="21" id="Zwt-hs-gT2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gastos: R$99999.99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUV-wq-geb" userLabel="Gastos L">
+                                <rect key="frame" x="117" y="227" width="139" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="IML-Xr-vpV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -159,19 +169,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="GHH-7X-QDR" firstAttribute="centerX" secondItem="BZ8-PM-non" secondAttribute="centerX" id="2nG-Ev-57Z"/>
-                            <constraint firstItem="BZ8-PM-non" firstAttribute="leading" secondItem="l5T-DX-OEb" secondAttribute="leadingMargin" constant="90" id="7wF-Uf-754"/>
-                            <constraint firstItem="EHM-gK-4MP" firstAttribute="centerX" secondItem="GHH-7X-QDR" secondAttribute="centerX" id="A3S-uE-Icl"/>
-                            <constraint firstItem="EHM-gK-4MP" firstAttribute="top" secondItem="l5T-DX-OEb" secondAttribute="top" id="O2X-22-bJn"/>
-                            <constraint firstItem="TxQ-nz-jUw" firstAttribute="top" secondItem="BZ8-PM-non" secondAttribute="bottom" constant="25" id="QbF-KB-5in"/>
-                            <constraint firstItem="EHM-gK-4MP" firstAttribute="leading" secondItem="l5T-DX-OEb" secondAttribute="leading" id="SIk-Dg-geH"/>
-                            <constraint firstItem="BZ8-PM-non" firstAttribute="top" secondItem="GHH-7X-QDR" secondAttribute="bottom" constant="10" id="ejM-hf-ySt"/>
-                            <constraint firstItem="TxQ-nz-jUw" firstAttribute="leading" secondItem="l5T-DX-OEb" secondAttribute="leadingMargin" id="fJU-9r-ClO"/>
-                            <constraint firstAttribute="trailing" secondItem="EHM-gK-4MP" secondAttribute="trailing" id="iCe-LN-aIg"/>
-                            <constraint firstItem="rjE-1p-CiF" firstAttribute="top" secondItem="TxQ-nz-jUw" secondAttribute="bottom" constant="8" symbolic="YES" id="mUg-wK-tER"/>
-                            <constraint firstItem="EHM-gK-4MP" firstAttribute="bottom" secondItem="1PB-2z-2m4" secondAttribute="bottom" id="oAr-AZ-HvV"/>
-                            <constraint firstItem="BZ8-PM-non" firstAttribute="centerX" secondItem="TxQ-nz-jUw" secondAttribute="centerX" id="pef-yT-YOa"/>
-                            <constraint firstItem="GHH-7X-QDR" firstAttribute="top" secondItem="1PB-2z-2m4" secondAttribute="bottom" constant="15" id="yC1-BP-47p"/>
+                            <constraint firstAttribute="trailing" secondItem="EHM-gK-4MP" secondAttribute="trailing" id="18g-HD-ABf"/>
+                            <constraint firstItem="TxQ-nz-jUw" firstAttribute="top" secondItem="BZ8-PM-non" secondAttribute="bottom" constant="7" id="6Tk-PF-DcD"/>
+                            <constraint firstItem="EHM-gK-4MP" firstAttribute="leading" secondItem="l5T-DX-OEb" secondAttribute="leading" id="T7T-eJ-ePm"/>
+                            <constraint firstItem="GHH-7X-QDR" firstAttribute="leading" secondItem="CUV-wq-geb" secondAttribute="leading" id="X1C-SY-JJl"/>
+                            <constraint firstItem="TxQ-nz-jUw" firstAttribute="top" secondItem="CUV-wq-geb" secondAttribute="bottom" constant="27" id="ZeY-rk-GqO"/>
+                            <constraint firstItem="CUV-wq-geb" firstAttribute="top" secondItem="GHH-7X-QDR" secondAttribute="bottom" constant="8" symbolic="YES" id="bli-uJ-23h"/>
+                            <constraint firstItem="GHH-7X-QDR" firstAttribute="top" secondItem="1PB-2z-2m4" secondAttribute="bottom" constant="15" id="jaS-Fq-Fa9"/>
+                            <constraint firstItem="TxQ-nz-jUw" firstAttribute="leading" secondItem="l5T-DX-OEb" secondAttribute="leadingMargin" id="lWp-uv-Ulo"/>
+                            <constraint firstItem="GHH-7X-QDR" firstAttribute="centerX" secondItem="CUV-wq-geb" secondAttribute="centerX" id="lgj-eB-9hg"/>
+                            <constraint firstItem="EHM-gK-4MP" firstAttribute="centerX" secondItem="GHH-7X-QDR" secondAttribute="centerX" id="ozK-Fp-6W3"/>
+                            <constraint firstItem="GHH-7X-QDR" firstAttribute="centerX" secondItem="BZ8-PM-non" secondAttribute="centerX" id="qum-kz-1sH"/>
+                            <constraint firstItem="rjE-1p-CiF" firstAttribute="top" secondItem="TxQ-nz-jUw" secondAttribute="bottom" constant="8" symbolic="YES" id="rGh-97-DOT"/>
+                            <constraint firstItem="EHM-gK-4MP" firstAttribute="top" secondItem="l5T-DX-OEb" secondAttribute="top" id="tck-Pb-al5"/>
+                            <constraint firstItem="BZ8-PM-non" firstAttribute="centerX" secondItem="TxQ-nz-jUw" secondAttribute="centerX" id="thr-Nv-pre"/>
+                            <constraint firstItem="EHM-gK-4MP" firstAttribute="bottom" secondItem="1PB-2z-2m4" secondAttribute="bottom" id="xKN-YB-tTd"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Gastos" image="coins" selectedImage="CoinsFilled" id="See-f6-TJd"/>
@@ -181,13 +193,14 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="saldoLabel" destination="BZ8-PM-non" id="sEY-mV-ylp"/>
+                        <outlet property="gastosLabel" destination="CUV-wq-geb" id="TBx-1W-lkr"/>
+                        <outlet property="saldoLabel" destination="BZ8-PM-non" id="I4e-vE-oVC"/>
                         <outlet property="tableView" destination="TxQ-nz-jUw" id="NPh-qH-X8Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o51-tU-HDc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4972.5" y="1747.5"/>
+            <point key="canvasLocation" x="-4973.6000000000004" y="1747.3763118440781"/>
         </scene>
         <!--AdicionarGastos-->
         <scene sceneID="Qmr-Vj-ve3">

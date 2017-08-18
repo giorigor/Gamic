@@ -12,9 +12,11 @@ class GastosViewController: UIViewController, UITableViewDataSource, UITableView
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var saldoLabel: UILabel!
+    @IBOutlet weak var gastosLabel: UILabel!
     
     var gastoDAO = GastoDAO()
     var gastos = [Gasto]()
+    var gastosTotais: Double = 0.0
     var celulaSelecionada:Bool = false
     var linhaAtual = -1
     
@@ -29,6 +31,8 @@ class GastosViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         celulaSelecionada = false
+        calcularGastoTotal()
+        gastosLabel.text = "Gastos: R$ \(gastosTotais)"
         recarregarTabela()
     }
     
@@ -51,6 +55,12 @@ class GastosViewController: UIViewController, UITableViewDataSource, UITableView
             }
         }
         return cell
+    }
+    
+    func calcularGastoTotal() {
+        for gasto in gastos {
+           gastosTotais += gasto.vlrGasto
+        }
     }
     
     func construirCelulaDaLinhaAtual(gastoCell: GastosTableViewCell, gasto: Gasto) {
